@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 use App\Models\Traits\CalorieTrait;
 
-class exercise extends Model
+class Exercise extends Model
 {
 	use HasFactory, CalorieTrait;
 
