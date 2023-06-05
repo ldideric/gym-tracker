@@ -13,12 +13,12 @@ class DummyUserSeeder extends Seeder
 	public function run(): void
 	{
 		User::factory(10)->create()->each(function ($user) {
-		Workout::factory(3)->create([
-			'user_id' => $user->id,
-		])->each(function ($workout) {
-			$exercises = Exercise::inRandomOrder()->limit(rand(5, 8))->get();
-			$workout->exercises()->attach($exercises);
+			Workout::factory(3)->create([
+				'user_id' => $user->id,
+			])->each(function ($workout) {
+				$exercises = Exercise::inRandomOrder()->limit(rand(5, 8))->get();
+				$workout->exercises()->attach($exercises);
+			});
 		});
-	});
 	}
 }

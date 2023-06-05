@@ -35,8 +35,8 @@ class User extends Authenticatable
 		return $this->hasMany(Workout::class);
 	}
 
-	public function exercises(): HasManyThrough
+	public function exercises()
 	{
-		return $this->hasManyThrough(Exercise::class, Workout::class);
+		return $this->workouts()->exercises();
 	}
 }

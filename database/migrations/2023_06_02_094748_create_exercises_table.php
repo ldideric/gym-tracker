@@ -4,6 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+use App\Models\User;
+
 return new class extends Migration
 {
 	public function up(): void
@@ -14,6 +16,7 @@ return new class extends Migration
 			$table->string('muscle_group');
 			$table->text('description')->nullable();
 			$table->integer('calories_per_minute')->nullable();
+			$table->foreignIdFor(User::class)->onDelete('cascade')->nullable();
 			$table->timestamps();
 		});
 	}

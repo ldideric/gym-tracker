@@ -17,4 +17,9 @@ class Exercise extends Model
 		'description',
 		'calories_per_minute',
 	];
+
+	public function workouts()
+	{
+		return $this->belongsToMany(Workout::class, 'workout_exercises');
+	}
 }
