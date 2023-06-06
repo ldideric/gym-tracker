@@ -5,7 +5,6 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WorkoutController;
 
 
-
 Route::redirect('/', '/workouts');
 
 // User routes

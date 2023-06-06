@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\View\View;
+use App\Models\Exercise;
 use App\Models\Workout;
 
 class WorkoutController extends Controller
@@ -31,6 +32,10 @@ class WorkoutController extends Controller
 
 	public function store(): View
 	{
+		$this->validate(request(), [
+			'name' => 'required|string|max:255',
+		]);
+
 		$workout = Workout::create([
 			'user_id' => auth()->user()->id,
 			'name' => request('name'),
