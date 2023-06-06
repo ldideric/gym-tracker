@@ -1,22 +1,43 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\WorkoutController;
 
 
+
+Route::redirect('/', '/workouts');
+
+// User routes
+Route::get('/workouts', [WorkoutController::class, 'index'])
+	->middleware(['auth', 'CheckWorkoutOwner'])
+	->name('workouts.index');
+
+Route::get('/workouts/create', [WorkoutController::class, 'create'])
+	->middleware('auth')
+	->name('workouts.create');
+
+Route::get('/workouts/{workout}', [WorkoutController::class, 'show'])
+	->middleware(['auth', 'CheckWorkoutOwner'])
+	->name('workouts.show');
+
+Route::put('/workouts', [WorkoutController::class, 'store'])
+	->middleware('auth')
+	->name('workouts.store');
+
+// Route::get('/workouts/{workout}/edit', [WorkoutController::class, 'edit'])
+// 	->middleware(['auth', 'CheckWorkoutOwner'])
+// 	->name('workouts.edit');
+
+// Route::patch('/workouts/{workout}', [WorkoutController::class, 'update'])
+// 	->middleware(['auth', 'CheckWorkoutOwner'])
+// 	->name('workouts.update');
+
+// Route::delete('/workouts/{workout}', [WorkoutController::class, 'destroy'])->name('workouts.destroy');
+
+
+// Breeze routes
 Route::middleware('auth')->group(function () {
-
-	Route::redirect('/', '/workouts');
-
-	// User routes
-	Route::middleware(['CheckWorkoutOwner'])->group(function () {
-		Route::get('/workouts', [UserController::class, 'index'])->name('workouts.index');
-		Route::get('/workouts/{workout}', [UserController::class, 'show'])->name('workouts.show');
-	});
-
-
-	// Breeze routes
 	Route::get('/dashboard', function () {
 		return view('dashboard');
 	})->name('dashboard');

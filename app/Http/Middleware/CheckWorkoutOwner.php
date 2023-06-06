@@ -16,11 +16,11 @@ class CheckWorkoutOwner
 		if (!$workout) {
 			return $next($request);
 		}
-	
+
 		if (Auth::check() && Auth::user()->id === $workout->user_id) {
 			return $next($request);
 		}
-	
+
 		return abort(403);
 	}
 }

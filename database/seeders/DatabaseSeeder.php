@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
 			'email' => 'admin@admin.com',
 			'password' => bcrypt('admin'),
 		])->each(function ($user) {
-			Workout::factory(3)->create([
+			Workout::factory(13)->create([
 				'user_id' => $user->id,
 			])->each(function ($workout) {
 				$exercises = Exercise::inRandomOrder()->limit(rand(5, 8))->get();
