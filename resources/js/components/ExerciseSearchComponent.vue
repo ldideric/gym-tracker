@@ -1,23 +1,35 @@
 <template>
 	<div class="mx-auto max-w-lg p-6">
+
 		<div class="mt-4">
 			<label class="block text-gray-700 text-sm font-bold mb-2">Selected Exercises:</label>
 			<ul>
+				<li v-if="selectedExercises.length === 0" class="bg-blue-100 p-2 rounded mt-1">No exercises selected.</li>
 				<li v-for="exercise in selectedExercises" :key="exercise.id" class="bg-blue-100 p-2 rounded mt-1 flex justify-between items-center">
 					{{ exercise.name }}
 					<button type="button" @click="removeExercise(exercise)" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">Remove</button>
+					<input type="hidden" name="selectedExercises[]" :value="exercise.id">
 				</li>
 			</ul>
 		</div>
-		<div class="mt-4">
-			<input type="text" name="search" id="search" v-model="search" @input="searchExercises" @keydown.enter.prevent placeholder="Search Exercises" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-			<div v-for="exercise in exercises" :key="exercise.id" @click="addExercise(exercise)" class="mt-2 cursor-pointer hover:bg-blue-100 p-2 rounded">
+
+		<div class="mt-4 relative">
+			<input type="text" name="search" id="search" v-model="search" @input="searchExercises" @keydown.enter.prevent placeholder="Search Exercises" class="shadow appearance-none border rounded w-full py-2 px-3 pr-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+			<button type="button" @click="clearSearch" class="absolute inset-y-0 right-0 top-0 flex items-center px-2 mt-2 cursor-pointer">
+				<svg class="h-5 w-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+				</svg>
+			</button>
+			<div v-for="exercise in exercises" :key="exercise.id" @click="addExercise(exercise)" class="mt-2 cursor-pointer hover:bg-blue-100 p-2 rounded border border-gray-200">
 				{{ exercise.name }}
 			</div>
 		</div>
+
+
 		<div v-if="error" class="mb-4 text-red-500">
 			{{ error }}
 		</div>
+
 	</div>
 </template>
 
@@ -42,7 +54,7 @@ export default {
 			}
 			axios.post('/api/exercises', { search: this.search })
 				.then(response => {
-					this.exercises = response.data.slice(0, 10); // limit results to 10
+					this.exercises = response.data;
 				})
 				.catch(() => {
 					this.error = "Error occurred while searching.";
@@ -55,6 +67,10 @@ export default {
 		removeExercise(exercise) {
 			this.selectedExercises = this.selectedExercises.filter(item => item.id !== exercise.id);
 			this.exercises.push(exercise);
+		},
+		clearSearch() {
+			this.search = '';
+			this.exercises = [];
 		},
 	},
 };

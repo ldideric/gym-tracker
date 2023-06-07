@@ -12,6 +12,7 @@ class ExerciseController extends Controller
 		$search = $request->input('search');
 
 		$exercises = Exercise::where('name', 'like', "%$search%")
+			->limit(10)
 			->get();
 
 		return response()->json($exercises);

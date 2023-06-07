@@ -34,12 +34,15 @@ class WorkoutController extends Controller
 	{
 		$this->validate(request(), [
 			'name' => 'required|string|max:255',
+			'selectedExercises' => 'required|array',
 		]);
 
-		$workout = Workout::create([
-			'user_id' => auth()->user()->id,
-			'name' => request('name'),
-		]);
+		$workout = Workout::Factory()
+			->hasAttached(Exercise::find(request('selectedExercises')))
+			->create([
+				'user_id' => auth()->user()->id,
+				'name' => request('name'),
+			]);
 
 		return view('workouts.show', [
 			'user' => auth()->user(),
