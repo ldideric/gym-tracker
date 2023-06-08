@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WorkoutController;
 
-
+Route::get('/')->name('home');
 Route::redirect('/', '/workouts');
 
 // User routes
@@ -32,7 +32,9 @@ Route::put('/workouts', [WorkoutController::class, 'store'])
 // 	->middleware(['auth', 'CheckWorkoutOwner'])
 // 	->name('workouts.update');
 
-// Route::delete('/workouts/{workout}', [WorkoutController::class, 'destroy'])->name('workouts.destroy');
+Route::delete('/workouts/{workout}', [WorkoutController::class, 'destroy'])
+	->middleware(['auth', 'CheckWorkoutOwner'])
+	->name('workouts.destroy');
 
 
 // Breeze routes

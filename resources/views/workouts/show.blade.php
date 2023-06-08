@@ -3,8 +3,14 @@
 @section('title', $workout->name)
 
 @section('content')
-	<div class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-md text-gray-700">
-		<h1 class="text-4xl font-bold mb-4">{{ $workout->name }}</h1>
+
+	<div class="container flex items-center mx-auto mt-5">
+		<x-home.left-button :url="route('workouts.index')">back</x-home.left-button>
+		<delete-exercise-component :url="'{{ route('workouts.destroy', $workout) }}'"></delete-exercise-component>
+	</div>
+
+	<div class="container mx-auto my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">
+		<h1 class="text-3xl font-bold mb-4">{{ $workout->name }}</h1>
 		
 		<h2 class="text-2xl font-bold mb-2">Exercises:</h2>
 		<ul class="list-disc list-inside">
@@ -12,7 +18,6 @@
 				<li>{{ $exercise->name }}</li>
 			@endforeach
 		</ul>
-
-		<x-home.link-button :url="route('workouts.index')">Back to Overview</x-home.link-button>
 	</div>
+
 @endsection

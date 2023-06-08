@@ -8,13 +8,15 @@
 
 	<title>{{ str_replace('_', ' ', config('app.name')) }} - @yield('title')</title>
 
+
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 	@vite('resources/css/app.css')
 	@vite('resources/js/bootstrap.js')
 	@vite('resources/js/app.js')
+	@vite('resources/js/navbar.js')
 
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100" id="app">
 
 	<x-home.navbar></x-home.navbar>
 

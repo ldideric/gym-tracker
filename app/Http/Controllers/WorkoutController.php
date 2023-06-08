@@ -49,4 +49,13 @@ class WorkoutController extends Controller
 			'workout' => $workout,
 		]);
 	}
+
+	public function destroy(Workout $workout): View
+	{
+		$workout->delete();
+
+		return view('workouts.index', [
+			'user' => auth()->user(),
+		]);
+	}
 }
