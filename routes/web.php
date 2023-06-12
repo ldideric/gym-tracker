@@ -22,7 +22,7 @@ Route::middleware(['auth'])->group(function () {
 	});
 
 	// Breeze routes
-	Route::get('/dashboard', [ProfileController::class, 'index'])					->name('profile.index');
+	Route::get('/dashboard', [ProfileController::class, 'dashboard'])				->name('dashboard');
 	Route::get('/profile', [ProfileController::class, 'edit'])						->name('profile.edit');
 	Route::patch('/profile', [ProfileController::class, 'update'])					->name('profile.update');
 	Route::delete('/profile', [ProfileController::class, 'destroy'])				->name('profile.destroy');
