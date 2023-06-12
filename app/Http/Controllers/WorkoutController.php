@@ -10,24 +10,19 @@ class WorkoutController extends Controller
 {
 	public function index(): View
 	{
-		return view('workouts.index', [
-			'user' => auth()->user(),
-		]);
+		return view('workouts.index');
 	}
 
 	public function show(Workout $workout): View
 	{
 		return view('workouts.show', [
-			'user' => auth()->user(),
 			'workout' => $workout,
 		]);
 	}
 
 	public function create(): View
 	{
-		return view('workouts.create', [
-			'user' => auth()->user(),
-		]);
+		return view('workouts.create');
 	}
 
 	public function store(): View
@@ -45,7 +40,6 @@ class WorkoutController extends Controller
 			]);
 
 		return view('workouts.show', [
-			'user' => auth()->user(),
 			'workout' => $workout,
 		]);
 	}
@@ -54,8 +48,31 @@ class WorkoutController extends Controller
 	{
 		$workout->delete();
 
-		return view('workouts.index', [
-			'user' => auth()->user(),
+		return view('workouts.index');
+	}
+
+	public function edit(Workout $workout): View
+	{
+		return view('workouts.edit', [
+			'workout' => $workout,
+		]);
+	}
+
+	public function update(Workout $workout): View
+	{
+		$this->validate(request(), [
+			'name' => 'required|string|max:255',
+			'selectedExercises' => 'required|array',
+		]);
+
+		$workout->update([
+			'name' => request('name'),
+		]);
+
+		$workout->exercises()->sync(request('selectedExercises'));
+
+		return view('workouts.show', [
+			'workout' => $workout,
 		]);
 	}
 }

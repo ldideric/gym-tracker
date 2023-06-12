@@ -15,16 +15,10 @@
 
 		<div class="mt-4 relative">
 			<input type="text" name="search" id="search" v-model="search" @input="searchExercises" @keydown.enter.prevent placeholder="Search Exercises" class="shadow appearance-none border rounded w-full py-2 px-3 pr-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-			<button type="button" @click="clearSearch" class="absolute inset-y-0 right-0 top-0 flex items-center px-2 mt-2 cursor-pointer">
-				<svg class="h-5 w-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-				</svg>
-			</button>
 			<div v-for="exercise in exercises" :key="exercise.id" @click="addExercise(exercise)" class="mt-2 cursor-pointer hover:bg-blue-100 p-2 rounded border border-gray-200">
 				{{ exercise.name }}
 			</div>
 		</div>
-
 
 		<div v-if="error" class="mb-4 text-red-500">
 			{{ error }}
@@ -38,11 +32,12 @@ import axios from 'axios';
 import _ from 'lodash';
 
 export default {
+	props: ['initSelectedExercises'],
 	data() {
 		return {
 			search: null,
 			exercises: [],
-			selectedExercises: [],
+			selectedExercises: this.initSelectedExercises || [],
 			error: null,
 		};
 	},
@@ -68,10 +63,7 @@ export default {
 			this.selectedExercises = this.selectedExercises.filter(item => item.id !== exercise.id);
 			this.exercises.push(exercise);
 		},
-		clearSearch() {
-			this.search = '';
-			this.exercises = [];
-		},
+		
 	},
 };
 </script>

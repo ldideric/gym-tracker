@@ -7,6 +7,7 @@
 	<div class="container flex items-center mx-auto mt-5">
 		<x-home.left-button :url="route('workouts.index')">back</x-home.left-button>
 		<delete-exercise-component :url="'{{ route('workouts.destroy', $workout) }}'"></delete-exercise-component>
+		<x-home.right-button :url="route('workouts.edit', $workout)">edit</x-home.right-button>
 	</div>
 
 	<div class="container mx-auto my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">

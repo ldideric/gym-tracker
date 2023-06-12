@@ -14,6 +14,7 @@ class Workout extends Model
 	protected $fillable = [
 		'exercise_id',
 		'user_id',
+		'name',
 	];
 
 	public function exercises(): BelongsToMany

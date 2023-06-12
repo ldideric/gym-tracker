@@ -15,15 +15,15 @@
 					</svg>
 				</button>
 				<div id="mobileMenu" class="hidden absolute top-8 right-64 w-64 bg-blue-500 text-white opacity-0 mt-2 py-2 rounded-lg shadow-lg transition-all duration-300 transform translate-x-64 overflow-hidden">
+					<a href="{{ route('home') }}" class="block py-1 px-5 hover:bg-blue-400 rounded transition">Home</a>
 					<a href="{{ route('workouts.index') }}" class="block py-1 px-5 hover:bg-blue-400 rounded transition">Workouts</a>
-					<a href="#" class="block py-1 px-5 hover:bg-blue-400 rounded transition">About</a>
-					<a href="#" class="block py-1 px-5 hover:bg-blue-400 rounded transition">Contact</a>
+					<a href="{{ route('dashboard') }}" class="block py-1 px-5 hover:bg-blue-400 rounded transition">{{ auth()->user()->name }}</a>
 				</div>
 			</div>
 			<ul class="hidden sm:flex space-x-4">
-				<li><a href="#" class="text-white hover:text-gray-200">Home</a></li>
-				<li><a href="#" class="text-white hover:text-gray-200">About</a></li>
-				<li><a href="#" class="text-white hover:text-gray-200">Contact</a></li>
+				<li><a href="{{ route('home') }}" class="text-white hover:text-gray-200">Home</a></li>
+				<li><a href="{{ route('workouts.index') }}" class="text-white hover:text-gray-200">Workouts</a></li>
+				<li><a href="{{ route('dashboard') }}" class="text-white hover:text-gray-200">{{ auth()->user()->name }}</a></li>
 			</ul>
 		</nav>
 	</div>

@@ -8,10 +8,9 @@
 		<x-home.left-button :url="route('workouts.index')">back</x-home.left-button>
 	</div>
 
-	<div class="container mx-auto my-5 p-6 bg-white rounded-lg shadow-md text-gray-700" id="app">
+	<div class="container mx-auto my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">
 		<h1 class="text-4xl font-bold mb-4">Create Workout</h1>
-		<form action="{{ route('workouts.store') }}" method="POST" id="app">
-		@method('PUT')
+		<form action="{{ route('workouts.store') }}" method="POST">
 		@csrf
 
 			<div class="mb-4">

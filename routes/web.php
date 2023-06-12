@@ -20,17 +20,17 @@ Route::get('/workouts/{workout}', [WorkoutController::class, 'show'])
 	->middleware(['auth', 'CheckWorkoutOwner'])
 	->name('workouts.show');
 
-Route::put('/workouts', [WorkoutController::class, 'store'])
+Route::post('/workouts', [WorkoutController::class, 'store'])
 	->middleware('auth')
 	->name('workouts.store');
 
-// Route::get('/workouts/{workout}/edit', [WorkoutController::class, 'edit'])
-// 	->middleware(['auth', 'CheckWorkoutOwner'])
-// 	->name('workouts.edit');
+Route::get('/workouts/{workout}/edit', [WorkoutController::class, 'edit'])
+	->middleware(['auth', 'CheckWorkoutOwner'])
+	->name('workouts.edit');
 
-// Route::patch('/workouts/{workout}', [WorkoutController::class, 'update'])
-// 	->middleware(['auth', 'CheckWorkoutOwner'])
-// 	->name('workouts.update');
+Route::put('/workouts/{workout}', [WorkoutController::class, 'update'])
+	->middleware(['auth', 'CheckWorkoutOwner'])
+	->name('workouts.update');
 
 Route::delete('/workouts/{workout}', [WorkoutController::class, 'destroy'])
 	->middleware(['auth', 'CheckWorkoutOwner'])
