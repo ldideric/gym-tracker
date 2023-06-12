@@ -1,51 +1,31 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WorkoutController;
+use App\Http\Controllers\ProfileController;
 
 Route::get('/')->name('home');
 Route::redirect('/', '/workouts');
 
-// User routes
-Route::get('/workouts', [WorkoutController::class, 'index'])
-	->middleware(['auth', 'CheckWorkoutOwner'])
-	->name('workouts.index');
+Route::middleware(['auth'])->group(function () {
+	// Workout routes
+	Route::get('/workouts', [WorkoutController::class, 'index'])					->name('workouts.index');
+	Route::get('/workouts/create', [WorkoutController::class, 'create'])			->name('workouts.create');
+	Route::post('/workouts', [WorkoutController::class, 'store'])					->name('workouts.store');
 
-Route::get('/workouts/create', [WorkoutController::class, 'create'])
-	->middleware('auth')
-	->name('workouts.create');
+	// Workout routes w/ WorkoutOwner middleware
+	Route::middleware(['CheckWorkoutOwner'])->group(function () {
+		Route::get('/workouts/{workout}', [WorkoutController::class, 'show'])		->name('workouts.show');
+		Route::get('/workouts/{workout}/edit', [WorkoutController::class, 'edit'])	->name('workouts.edit');
+		Route::put('/workouts/{workout}', [WorkoutController::class, 'update'])		->name('workouts.update');
+		Route::delete('/workouts/{workout}', [WorkoutController::class, 'destroy'])	->name('workouts.destroy');
+	});
 
-Route::get('/workouts/{workout}', [WorkoutController::class, 'show'])
-	->middleware(['auth', 'CheckWorkoutOwner'])
-	->name('workouts.show');
-
-Route::post('/workouts', [WorkoutController::class, 'store'])
-	->middleware('auth')
-	->name('workouts.store');
-
-Route::get('/workouts/{workout}/edit', [WorkoutController::class, 'edit'])
-	->middleware(['auth', 'CheckWorkoutOwner'])
-	->name('workouts.edit');
-
-Route::put('/workouts/{workout}', [WorkoutController::class, 'update'])
-	->middleware(['auth', 'CheckWorkoutOwner'])
-	->name('workouts.update');
-
-Route::delete('/workouts/{workout}', [WorkoutController::class, 'destroy'])
-	->middleware(['auth', 'CheckWorkoutOwner'])
-	->name('workouts.destroy');
-
-
-// Breeze routes
-Route::middleware('auth')->group(function () {
-	Route::get('/dashboard', function () {
-		return view('dashboard');
-	})->name('dashboard');
-
-	Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-	Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-	Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+	// Breeze routes
+	Route::get('/dashboard', [ProfileController::class, 'index'])					->name('profile.index');
+	Route::get('/profile', [ProfileController::class, 'edit'])						->name('profile.edit');
+	Route::patch('/profile', [ProfileController::class, 'update'])					->name('profile.update');
+	Route::delete('/profile', [ProfileController::class, 'destroy'])				->name('profile.destroy');
 });
 
 require __DIR__.'/auth.php';

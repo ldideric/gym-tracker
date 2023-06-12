@@ -2,7 +2,7 @@
 <header class="bg-blue-500 py-4 sticky top-0 z-50">
 	<div class="container mx-auto px-4">
 		<nav class="flex items-center justify-between">
-			<a href="/">
+			<a href="{{ route('home') }}">
 				<h1 class="text-white text-2xl font-bold">{{ str_replace('_', ' ', config('app.name')) }}</h1>
 			</a>
 			<div class="relative">
@@ -17,13 +17,13 @@
 				<div id="mobileMenu" class="hidden absolute top-8 right-64 w-64 bg-blue-500 text-white opacity-0 mt-2 py-2 rounded-lg shadow-lg transition-all duration-300 transform translate-x-64 overflow-hidden">
 					<a href="{{ route('home') }}" class="block py-1 px-5 hover:bg-blue-400 rounded transition">Home</a>
 					<a href="{{ route('workouts.index') }}" class="block py-1 px-5 hover:bg-blue-400 rounded transition">Workouts</a>
-					<a href="{{ route('dashboard') }}" class="block py-1 px-5 hover:bg-blue-400 rounded transition">{{ auth()->user()->name }}</a>
+					<a href="{{ route('profile.index') }}" class="block py-1 px-5 hover:bg-blue-400 rounded transition">{{ auth()->user()->name }}</a>
 				</div>
 			</div>
 			<ul class="hidden sm:flex space-x-4">
 				<li><a href="{{ route('home') }}" class="text-white hover:text-gray-200">Home</a></li>
 				<li><a href="{{ route('workouts.index') }}" class="text-white hover:text-gray-200">Workouts</a></li>
-				<li><a href="{{ route('dashboard') }}" class="text-white hover:text-gray-200">{{ auth()->user()->name }}</a></li>
+				<li><a href="{{ route('profile.index') }}" class="text-white hover:text-gray-200">{{ auth()->user()->name }}</a></li>
 			</ul>
 		</nav>
 	</div>
