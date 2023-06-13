@@ -16,7 +16,6 @@ return new class extends Migration
 			$table->string('muscle_group');
 			$table->text('description')->nullable();
 			$table->integer('calories_per_minute')->nullable();
-			$table->foreignIdFor(User::class)->onDelete('cascade')->nullable();
 			$table->timestamps();
 		});
 	}

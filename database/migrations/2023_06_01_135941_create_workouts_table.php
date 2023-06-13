@@ -20,9 +20,9 @@ return new class extends Migration
 		});
 
 		Schema::create('workout_exercises', function (Blueprint $table) {
-			$table->id();
-			$table->foreignIdFor(Workout::class)->onDelete('cascade')->nullable();
-			$table->foreignIdFor(Exercise::class)->onDelete('cascade')->nullable();
+			$table->foreignIdFor(Workout::class)->onDelete('cascade');
+			$table->foreignIdFor(Exercise::class)->onDelete('cascade');
+			$table->primary(['workout_id', 'exercise_id']);
 			$table->timestamps();
 		});
 	}

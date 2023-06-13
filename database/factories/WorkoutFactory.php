@@ -10,7 +10,7 @@ class WorkoutFactory extends Factory
 	{
 		return [
 			'name' => 'Workout ' . $this->faker->unique()->numberBetween(1, 100),
-			'user_id' => $this->faker->numberBetween(1, 10)
+			'user_id' => $this->faker->numberBetween(1, 10),
 		];
 	}
 }

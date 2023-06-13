@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use App\Models\Exercise;
 use App\Models\Workout;
+use App\Models\WorkoutSession;
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
@@ -29,8 +30,26 @@ class UserSeeder extends Seeder
 			]);
 
 			$workout->exercises()->attach($ExerciseDB->random(rand(5, 8)));
+
+			$workout->exercises->each(function ($exercise) use ($workout, $newUser) {
+				$workoutSessionData = [
+					'user_id' => $newUser->id,
+					'workout_id' => $workout->id,
+				];
+
+				if ($exercise->is_cardio()) {
+					$workoutSessionData['sets'] = null;
+					$workoutSessionData['reps'] = null;
+					$workoutSessionData['weight'] = null;
+				} else {
+					$workoutSessionData['duration'] = null;
+				}
+
+				$workoutSession = WorkoutSession::factory()->create($workoutSessionData);
+				$workoutSession->exercises()->attach($exercise->id);
+			});
 		}
 
-		// $this->call(DummyUserSeeder::class);
+		$this->call(DummyUserSeeder::class);
 	}
 }
