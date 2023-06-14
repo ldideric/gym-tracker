@@ -15,7 +15,7 @@ return new class extends Migration
 		Schema::create('workouts', function (Blueprint $table) {
 			$table->id();
 			$table->string('name');
-			$table->foreignIdFor(User::class)->onDelete('cascade')->nullable();
+			$table->foreignIdFor(User::class)->onDelete('cascade');
 			$table->timestamps();
 		});
 

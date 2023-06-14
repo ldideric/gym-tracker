@@ -6,7 +6,7 @@ use App\Enums\MuscleGroup;
 use App\Models\User;
 use App\Models\Workout;
 use App\Models\Exercise;
-use App\Models\WorkoutSession;
+use App\Models\Session;
 use Illuminate\Database\Seeder;
 
 class DummyUserSeeder extends Seeder
@@ -41,7 +41,7 @@ class DummyUserSeeder extends Seeder
 				$workoutSessionData['duration'] = null;
 			}
 
-			$workoutSession = WorkoutSession::factory()->create($workoutSessionData);
+			$workoutSession = Session::factory()->create($workoutSessionData);
 			$workoutSession->exercises()->attach($exercise->id);
 		});
 	}

@@ -6,19 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use App\Models\Traits\DecimalTrait;
 
-class WorkoutSession extends Model
+class Session extends Model
 {
-	use HasFactory, DecimalTrait;
+	use HasFactory;
 
 	protected $fillable = [
 		'user_id',
 		'workout_id',
-		'sets',
-		'reps',
-		'weight',
-		'duration',
 	];
 
 	public function user(): BelongsTo
@@ -31,8 +26,9 @@ class WorkoutSession extends Model
 		return $this->belongsTo(Workout::class);
 	}
 
-	public function exercises(): BelongsToMany
+	public function sessionExercises(): BelongsToMany
 	{
-		return $this->belongsToMany(Exercise::class, 'workout_session_exercise');
+		return $this->belongsToMany(Exercise::class, 'session_exercises', 'session_id', 'exercise_id')
+			->withPivot(['sets', 'reps', 'weight', 'duration']);
 	}
 }

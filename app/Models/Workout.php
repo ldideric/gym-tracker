@@ -17,13 +17,18 @@ class Workout extends Model
 		'name',
 	];
 
-	public function exercises(): BelongsToMany
-	{
-		return $this->belongsToMany(Exercise::class, 'workout_exercises');
-	}
-
 	public function user(): BelongsTo
 	{
 		return $this->belongsTo(User::class);
+	}
+
+	public function exercises(): BelongsToMany
+	{
+		return $this->belongsToMany(Exercise::class, 'workout_exercises', 'workout_id', 'exercise_id');
+	}
+
+	public function workoutExercises(): BelongsToMany
+	{
+		return $this->belongsToMany(WorkoutExercise::class);
 	}
 }

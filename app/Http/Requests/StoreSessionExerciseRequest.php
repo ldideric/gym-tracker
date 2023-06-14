@@ -6,7 +6,7 @@ use Illuminate\Foundation\Http\FormRequest;
 use App\Models\Exercise;
 use App\Enums\MuscleGroup;
 
-class StoreWorkoutSessionRequest extends FormRequest
+class StoreSessionExerciseRequest extends FormRequest
 {
 	public function authorize()
 	{
@@ -16,7 +16,6 @@ class StoreWorkoutSessionRequest extends FormRequest
 	public function rules()
 	{
 		$rules = [
-			'user_id' => ['required', 'exists:users,id'],
 			'workout_id' => ['required', 'exists:workouts,id'],
 			'exercise_id' => ['required', 'exists:exercises,id'],
 		];

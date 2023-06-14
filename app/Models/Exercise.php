@@ -18,11 +18,6 @@ class Exercise extends Model
 		'calories_per_minute',
 	];
 
-	public function workouts()
-	{
-		return $this->belongsToMany(Workout::class, 'workout_exercises');
-	}
-
 	public function is_cardio()
 	{
 		return $this->muscle_group === MuscleGroup::CARDIO;

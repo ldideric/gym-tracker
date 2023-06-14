@@ -5,7 +5,8 @@ namespace Database\Seeders;
 use App\Models\User;
 use App\Models\Exercise;
 use App\Models\Workout;
-use App\Models\WorkoutSession;
+use App\Models\Session;
+use App\Models\SessionExercise;
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
@@ -31,25 +32,35 @@ class UserSeeder extends Seeder
 
 			$workout->exercises()->attach($ExerciseDB->random(rand(5, 8)));
 
-			$workout->exercises->each(function ($exercise) use ($workout, $newUser) {
-				$workoutSessionData = [
-					'user_id' => $newUser->id,
-					'workout_id' => $workout->id,
-				];
-
-				if ($exercise->is_cardio()) {
-					$workoutSessionData['sets'] = null;
-					$workoutSessionData['reps'] = null;
-					$workoutSessionData['weight'] = null;
-				} else {
-					$workoutSessionData['duration'] = null;
-				}
-
-				$workoutSession = WorkoutSession::factory()->create($workoutSessionData);
-				$workoutSession->exercises()->attach($exercise->id);
-			});
+			// Create a session from the workout
+			$this->createSession($workout->exercises, $newUser, $workout->id);
+			// Create a second session without a workout
+			$this->createSession($ExerciseDB->random(rand(5, 8)), $newUser);
 		}
 
-		$this->call(DummyUserSeeder::class);
+		// $this->call(DummyUserSeeder::class);
+	}
+
+	private function createSession($exercises, $user, $workoutId = null)
+	{
+		$session = Session::factory()->create([
+			'user_id' => $user->id,
+			'workout_id' => $workoutId,
+		]);
+
+		foreach ($exercises as $exercise) {
+			$params = [
+				'exercise_id' => $exercise->id,
+				'session_id' => $session->id,
+			];
+			if ($exercise->is_cardio()) {
+				$params['sets'] = null;
+				$params['reps'] = null;
+				$params['weight'] = null;
+			} else {
+				$params['duration'] = null;
+			}
+			SessionExercise::factory()->create($params);
+		}
 	}
 }

@@ -10,7 +10,7 @@
 		<x-home.right-button :url="route('workouts.edit', $workout)">edit</x-home.right-button>
 	</div>
 
-	<div class="container mx-auto my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">
+	<div class="container w-auto mx-5 my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">
 		<h1 class="text-3xl font-bold mb-4">{{ $workout->name }}</h1>
 		
 		<h2 class="text-2xl font-bold mb-2">Exercises:</h2>

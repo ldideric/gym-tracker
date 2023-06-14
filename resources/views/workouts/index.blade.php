@@ -9,7 +9,7 @@
 		<x-home.plus-button :url="route('workouts.create')">new workout</x-home.plus-button>
 	</div>
 
-	<div class="container mx-auto my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">
+	<div class="container w-auto mx-5 my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">
 
 		<h1 class="text-4xl font-bold mb-4">{{ str_replace('_', ' ', config('app.name')) }}</h1>
 		<p class="mb-2">Welcome to Lietze's {{ str_replace('_', ' ', config('app.name')) }}!</p>

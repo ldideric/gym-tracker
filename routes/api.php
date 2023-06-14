@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ExerciseController;
+use App\Http\Controllers\Api\ExerciseController;
 
 Route::post('/exercises', [ExerciseController::class, 'index'])
 	->middleware('auth:sanctum');

@@ -8,7 +8,7 @@
 		<x-home.left-button :url="route('workouts.show', $workout)">back</x-home.left-button>
 	</div>
 
-	<div class="container mx-auto my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">
+	<div class="container w-auto mx-5 my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">
 		<h1 class="text-4xl font-bold mb-4">Edit Workout</h1>
 		<form action="{{ route('workouts.update', $workout) }}" method="POST">
 		@method('PUT')
