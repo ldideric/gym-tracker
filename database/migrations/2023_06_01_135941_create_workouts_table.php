@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 use App\Models\User;
-use App\Models\Exercise;
+use App\Models\ExerciseType;
 use App\Models\Workout;
 
 return new class extends Migration
@@ -21,8 +21,8 @@ return new class extends Migration
 
 		Schema::create('workout_exercises', function (Blueprint $table) {
 			$table->foreignIdFor(Workout::class)->onDelete('cascade');
-			$table->foreignIdFor(Exercise::class)->onDelete('cascade');
-			$table->primary(['workout_id', 'exercise_id']);
+			$table->foreignIdFor(ExerciseType::class)->onDelete('cascade');
+			$table->primary(['workout_id', 'exercise_type_id']);
 			$table->timestamps();
 		});
 	}

@@ -4,18 +4,18 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-use App\Models\Exercise;
+use App\Models\ExerciseType;
 
-class ExerciseSeeder extends Seeder
+class ExerciseTypeSeeder extends Seeder
 {
 	public function run(): void
 	{
-		$json = file_get_contents(storage_path('app/exercises.json'));
+		$json = file_get_contents(storage_path('app/exercise_types.json'));
 		$muscleGroups = json_decode($json, true);
 
 		foreach ($muscleGroups as $muscleGroup) {
 			foreach ($muscleGroup['exercises'] as $exercise) {
-				Exercise::factory()->create([
+				ExerciseType::factory()->create([
 					'name' => $exercise['exerciseName'],
 					'muscle_group' => $muscleGroup['groupName'],
 					'description' => $exercise['description'],

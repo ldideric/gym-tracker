@@ -15,7 +15,7 @@
 		
 		<h2 class="text-2xl font-bold mb-2">Exercises:</h2>
 		<ul class="list-disc list-inside">
-			@foreach ($workout->exercises as $exercise)
+			@foreach ($workout->exerciseTypes as $exercise)
 				<li>{{ $exercise->name }}</li>
 			@endforeach
 		</ul>

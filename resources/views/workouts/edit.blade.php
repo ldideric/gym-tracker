@@ -24,7 +24,7 @@
 				@enderror
 			</div>
 
-			<exercise-search-component :init-selected-exercises="{{ json_encode($workout->exercises) }}"></exercise-search-component>
+			<exercise-search-component :init-selected-exercises="{{ json_encode($workout->exerciseTypes) }}"></exercise-search-component>
 
 			<div class="mt-4">
 				<button type="submit" class="bg-blue-500 text-white px-4 py-3 rounded font-medium w-full">Update Workout</button>

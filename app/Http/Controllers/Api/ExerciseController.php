@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Models\Exercise;
+use App\Models\ExerciseType;
 use Illuminate\Http\Request;
 
 class ExerciseController extends Controller
@@ -12,7 +12,7 @@ class ExerciseController extends Controller
 	{
 		$search = $request->input('search');
 
-		$exercises = Exercise::where('name', 'like', "%$search%")
+		$exercises = ExerciseType::where('name', 'like', "%$search%")
 			->limit(10)
 			->get();
 

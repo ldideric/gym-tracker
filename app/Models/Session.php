@@ -26,9 +26,9 @@ class Session extends Model
 		return $this->belongsTo(Workout::class);
 	}
 
-	public function sessionExercises(): BelongsToMany
+	public function Exercises(): BelongsToMany
 	{
-		return $this->belongsToMany(Exercise::class, 'session_exercises', 'session_id', 'exercise_id')
+		return $this->belongsToMany(Exercise::class, 'exercises', 'session_id', 'exercise_type_id')
 			->withPivot(['sets', 'reps', 'weight', 'duration']);
 	}
 }

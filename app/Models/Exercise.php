@@ -2,24 +2,30 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use App\Models\Traits\DecimalTrait;
-use App\Enums\MuscleGroup;
 
 class Exercise extends Model
 {
 	use HasFactory, DecimalTrait;
 
 	protected $fillable = [
-		'name',
-		'muscle_group',
-		'description',
-		'calories_per_minute',
+		'session_id',
+		'exercise_type_id',
+		'sets',
+		'reps',
+		'weight',
+		'duration',
 	];
 
-	public function is_cardio()
+	public function session()
 	{
-		return $this->muscle_group === MuscleGroup::CARDIO;
+		return $this->belongsTo(Session::class);
+	}
+
+	public function exercise_type()
+	{
+		return $this->belongsTo(ExerciseType::class);
 	}
 }

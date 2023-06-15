@@ -3,17 +3,17 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use App\Models\Exercise;
+use App\Models\ExerciseType;
 use App\Models\Workout;
 use App\Models\Session;
-use App\Models\SessionExercise;
+use App\Models\Exercise;
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
 {
 	public function run(): void
 	{
-		$ExerciseDB = Exercise::all();
+		$ExerciseDB = ExerciseType::all();
 
 		$json = file_get_contents(storage_path('app/users.json'));
 		$users = json_decode($json, true);
@@ -30,15 +30,15 @@ class UserSeeder extends Seeder
 				'user_id' => $newUser->id,
 			]);
 
-			$workout->exercises()->attach($ExerciseDB->random(rand(5, 8)));
+			$workout->exerciseTypes()->attach($ExerciseDB->random(rand(5, 8)));
 
 			// Create a session from the workout
-			$this->createSession($workout->exercises, $newUser, $workout->id);
+			$this->createSession($workout->exerciseTypes, $newUser, $workout->id);
 			// Create a second session without a workout
 			$this->createSession($ExerciseDB->random(rand(5, 8)), $newUser);
 		}
 
-		// $this->call(DummyUserSeeder::class);
+		$this->call(DummyUserSeeder::class);
 	}
 
 	static function createSession($exercises, $user, $workoutId = null)
@@ -50,7 +50,7 @@ class UserSeeder extends Seeder
 
 		foreach ($exercises as $exercise) {
 			$params = [
-				'exercise_id' => $exercise->id,
+				'exercise_type_id' => $exercise->id,
 				'session_id' => $session->id,
 			];
 			if ($exercise->is_cardio()) {
@@ -60,7 +60,7 @@ class UserSeeder extends Seeder
 			} else {
 				$params['duration'] = null;
 			}
-			SessionExercise::factory()->create($params);
+			Exercise::factory()->create($params);
 		}
 	}
 }

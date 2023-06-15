@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\View\View;
-use App\Models\Exercise;
+use App\Models\ExerciseType;
 use App\Models\Workout;
 
 class WorkoutController extends Controller
@@ -33,7 +33,7 @@ class WorkoutController extends Controller
 		]);
 
 		$workout = Workout::Factory()
-			->hasAttached(Exercise::find(request('selectedExercises')))
+			->hasAttached(ExerciseType::find(request('selectedExercises')))
 			->create([
 				'user_id' => auth()->user()->id,
 				'name' => request('name'),
@@ -69,7 +69,7 @@ class WorkoutController extends Controller
 			'name' => request('name'),
 		]);
 
-		$workout->exercises()->sync(request('selectedExercises'));
+		$workout->exerciseTypes()->sync(request('selectedExercises'));
 
 		return view('workouts.show', [
 			'workout' => $workout,
