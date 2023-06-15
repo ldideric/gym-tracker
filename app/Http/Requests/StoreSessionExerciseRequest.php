@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Exercise;
+use App\Models\ExerciseType;
 use App\Enums\MuscleGroup;
 
 class StoreSessionExerciseRequest extends FormRequest
@@ -17,10 +17,10 @@ class StoreSessionExerciseRequest extends FormRequest
 	{
 		$rules = [
 			'workout_id' => ['required', 'exists:workouts,id'],
-			'exercise_id' => ['required', 'exists:exercises,id'],
+			'exercise_type_id' => ['required', 'exists:exercise_types,id'],
 		];
 
-		$exercise = Exercise::find($this->exercise_id);
+		$exercise = ExerciseType::find($this->exercise_id);
 		if ($exercise->muscle_group->equals(MuscleGroup::CARDIO)) {
 			$rules['sets'] = ['nullable'];
 			$rules['reps'] = ['nullable'];

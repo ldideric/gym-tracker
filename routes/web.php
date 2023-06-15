@@ -25,17 +25,17 @@ Route::middleware(['auth'])->group(function () {
 	});
 
 	// Session routes
-	Route::get('/session/', [SessionController::class, 'index'])					->name('session.index');
-	Route::get('/session/create', [SessionController::class, 'create'])				->name('session.create');
-	Route::post('/session', [SessionController::class, 'store'])					->name('session.store');
+	Route::get('/sessions/', [SessionController::class, 'index'])					->name('sessions.index');
+	Route::get('/sessions/create', [SessionController::class, 'create'])				->name('sessions.create');
+	Route::post('/sessions', [SessionController::class, 'store'])					->name('sessions.store');
 
 	// User owner of session
 	Route::middleware(['CheckSessionOwner'])->group(function () {
 		// Session routes
-		Route::get('/session/{session}', [SessionController::class, 'show'])		->name('session.show');
-		Route::get('/session/{session}/edit', [SessionController::class, 'edit'])	->name('session.edit');
-		Route::put('/session/{session}', [SessionController::class, 'update'])		->name('session.update');
-		Route::delete('/session/{session}', [SessionController::class, 'destroy'])	->name('session.destroy');
+		Route::get('/sessions/{session}', [SessionController::class, 'show'])		->name('sessions.show');
+		Route::get('/sessions/{session}/edit', [SessionController::class, 'edit'])	->name('sessions.edit');
+		Route::put('/sessions/{session}', [SessionController::class, 'update'])		->name('sessions.update');
+		Route::delete('/sessions/{session}', [SessionController::class, 'destroy'])	->name('sessions.destroy');
 	});
 
 	// Breeze routes

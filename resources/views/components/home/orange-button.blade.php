@@ -1,7 +1,7 @@
 @props(['url', 'class' => ''])
 
 <div class="{{ $class }}">
-	<a href="{{ $url }}" class="inline-flex items-center p-3 bg-orange-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-orange-700 active:bg-orange-900 focus:outline-none focus:border-orange-900 focus:ring ring-orange-300 disabled:opacity-25 transition ease-in-out duration-150">
+	<a href="{{ $url }}" class="inline-flex items-center p-3 bg-transparent text-white border-2 border-rose-600 rounded transition-all ease-in duration-50 hover:bg-rose-600 font-semibold text-xs uppercase tracking-widest hover:text-white focus:outline-none focus:border-rose-500 focus:ring ring-rose-300">
 		{{ $slot }}
 	</a>
 </div>
