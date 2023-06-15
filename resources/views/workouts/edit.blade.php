@@ -4,8 +4,8 @@
 
 @section('content')
 
-	<div class="container flex items-center mx-auto mt-5">
-		<x-home.left-button :url="route('workouts.show', $workout)">back</x-home.left-button>
+	<div class="container w-[90vw] flex items-center justify-start mx-auto mt-5">
+		<x-home.blue-button :url="route('workouts.show', $workout)"><x-svg.left-arrow/></x-home.blue-button>
 	</div>
 
 	<div class="container w-auto mx-5 my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">

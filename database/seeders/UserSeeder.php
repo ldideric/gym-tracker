@@ -41,7 +41,7 @@ class UserSeeder extends Seeder
 		// $this->call(DummyUserSeeder::class);
 	}
 
-	private function createSession($exercises, $user, $workoutId = null)
+	static function createSession($exercises, $user, $workoutId = null)
 	{
 		$session = Session::factory()->create([
 			'user_id' => $user->id,

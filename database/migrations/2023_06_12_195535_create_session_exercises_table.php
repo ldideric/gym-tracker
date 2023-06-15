@@ -12,9 +12,9 @@ class CreateSessionExercisesTable extends Migration
 	public function up()
 	{
 		Schema::create('session_exercises', function (Blueprint $table) {
+			$table->id();
 			$table->foreignIdFor(Session::class)->onDelete('cascade');
 			$table->foreignIdFor(Exercise::class)->onDelete('cascade');
-			$table->primary(['session_id', 'exercise_id']);
 			$table->integer('sets')->nullable();
 			$table->integer('reps')->nullable();
 			$table->integer('weight')->nullable();

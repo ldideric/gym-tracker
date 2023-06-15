@@ -4,10 +4,10 @@
 
 @section('content')
 
-	<div class="container flex items-center mx-auto mt-5">
-		<x-home.left-button :url="route('workouts.index')">back</x-home.left-button>
+	<div class="container w-[90vw] flex items-center justify-between mx-auto mt-5">
+		<x-home.blue-button :url="route('workouts.index')"><x-svg.left-arrow/></x-home.blue-button>
+		<x-home.orange-button :url="route('workouts.edit', $workout)"><x-svg.edit/></x-home.orange-button>
 		<delete-exercise-component :url="'{{ route('workouts.destroy', $workout) }}'"></delete-exercise-component>
-		<x-home.right-button :url="route('workouts.edit', $workout)">edit</x-home.right-button>
 	</div>
 
 	<div class="container w-auto mx-5 my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">
