@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 use App\Models\ExerciseType;
 use App\Models\Workout;
 
@@ -44,11 +45,11 @@ class WorkoutController extends Controller
 		]);
 	}
 
-	public function destroy(Workout $workout): View
+	public function destroy(Workout $workout): RedirectResponse
 	{
 		$workout->delete();
 
-		return view('workouts.index');
+		return redirect('/workouts');
 	}
 
 	public function edit(Workout $workout): View

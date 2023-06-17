@@ -4,21 +4,24 @@
 
 @section('content')
 
-	<div class="container w-[90vw] flex items-center justify-between mx-auto mt-5">
-		<x-home.blue-button :url="route('workouts.index')"><x-svg.left-arrow/></x-home.blue-button>
-		<x-home.orange-button :url="route('workouts.edit', $workout)"><x-svg.edit/></x-home.orange-button>
-		<delete-exercise-component :url="'{{ route('workouts.destroy', $workout) }}'"></delete-exercise-component>
+	<div class="container w-auto m-5 text-white">
+		<h1 class="text-4xl text-rose-600 font-bold">{{ $workout->name }}</h1>
 	</div>
 
-	<div class="container w-auto mx-5 my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">
-		<h1 class="text-3xl font-bold mb-4">{{ $workout->name }}</h1>
-		
-		<h2 class="text-2xl font-bold mb-2">Exercises:</h2>
-		<ul class="list-disc list-inside">
-			@foreach ($workout->exerciseTypes as $exercise)
-				<li>{{ $exercise->name }}</li>
-			@endforeach
-		</ul>
+	<div class="mb-44">
+		<dropdown-details-component :exercises="{{ $workout->exerciseTypes }}"></dropdown-details-component>
+	</div>
+
+	<div class="sticky bottom-0">
+		<delete-exercise-component :deleteUrl="'{{ route('workouts.destroy', $workout) }}'" :editUrl="'{{ route('workouts.edit', $workout) }}'"></delete-exercise-component>
+		<div class="absolute right-6 bottom-28 flex">
+			<a href="{{ route('workouts.edit', $workout) }}" class="flex items-center justify-center border-3 bg-slate-900 border-rose-600 hover:bg-rose-600 text-rose-600 hover:text-slate-900 w-12 h-12 rounded-full mr-4">
+				<x-svg.edit/>
+			</a>
+			<a href="{{ route('workouts.create') }}" class="flex items-center justify-center border-3 bg-slate-900 border-rose-600 hover:bg-rose-600 text-rose-600 hover:text-slate-900 w-24 h-12 rounded-full">
+				<span class="font-bold">START</span>
+			</a>
+		</div>
 	</div>
 
 @endsection
