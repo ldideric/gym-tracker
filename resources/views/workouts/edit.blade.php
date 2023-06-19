@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('title', 'Create Workout')
+@section('title', 'Edit Workout')
 
 @section('content')
 
@@ -8,15 +8,15 @@
 		<h1 class="text-4xl text-rose-600 font-bold">Edit Workout</h1>
 	</div>
 
-	<div class="mb-44">
-		<div class="container w-auto m-5 p-4 text-white bg-slate-900 rounded-lg">
-			<form action="{{ route('workouts.update', $workout) }}" method="POST">
-				@method('PUT')
-				@csrf
+	<form action="{{ route('workouts.update', $workout) }}" method="POST">
+	@method('PUT')
+	@csrf
 
+		<div class="mb-44">
+			<div class="container w-auto m-5 p-4 text-white bg-slate-900 rounded-lg">
 				<div class="mb-4">
 					<label for="name" class="text-rose-600 text-sm font-bold mb-2">Workout Name</label>
-					<input type="text" name="name" id="name" placeholder="Workout Name" class=" appearance-none rounded w-full py-2 px-3 text-white bg-slate-700 leading-tight" value="{{ $workout->name }}">
+					<input type="text" name="name" id="name" placeholder="Workout Name" class="appearance-none rounded w-full py-2 px-3 text-white bg-slate-700 leading-tight outline-none active:border-rose-600 focus:border-rose-600" value="{{ $workout->name }}">
 					@if ($errors->has('name'))
 						<div class="text-red-500 mt-2 text-sm">{{ $errors->first('name') }}</div>
 					@endif
@@ -28,14 +28,22 @@
 					<div class="text-red-500 mt-2 text-sm">{{ $errors->first('selectedExercises') }}</div>
 				@endif
 
-				<x-home.rose-button :url="route('workouts.show', $workout)">
-					Back
-				</x-home.rose-button>
-
-				<button type="submit" class="bg-blue-500 text-white px-4 py-3 rounded font-medium w-full">Update Workout</button>
-
-			</form>
+			</div>
 		</div>
-	</div>
+
+		<div class="sticky bottom-0">
+			<div class="absolute left-6 bottom-28">
+				<a href="{{ route('workouts.show', $workout) }}" class="flex items-center justify-center border-3 bg-slate-900 border-rose-600 hover:bg-rose-600 text-rose-600 hover:text-slate-900 w-12 h-12 rounded-full">
+					<x-svg.cross/>
+				</a>
+			</div>
+			<div class="absolute right-6 bottom-28">
+				<button type="submit" class="flex items-center justify-center border-3 bg-slate-900 border-rose-600 hover:bg-rose-600 text-rose-600 hover:text-slate-900 w-12 h-12 rounded-full">
+					<x-svg.check/>
+				</button>
+			</div>
+		</div>
+
+	</form>
 
 @endsection

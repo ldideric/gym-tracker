@@ -4,32 +4,45 @@
 
 @section('content')
 
-	<div class="container w-[90vw] flex items-center justify-start mx-auto mt-5">
-		<x-home.blue-button :url="route('workouts.index')"><x-svg.left-arrow/></x-home.blue-button>
+	<div class="container w-auto m-5 text-white">
+		<h1 class="text-4xl text-rose-600 font-bold">Create Workout</h1>
 	</div>
 
-	<div class="container w-auto mx-5 my-5 p-6 bg-white rounded-lg shadow-md text-gray-700">
-		<h1 class="text-4xl font-bold mb-4">Create Workout</h1>
-		<form action="{{ route('workouts.store') }}" method="POST">
-		@csrf
+	<form action="{{ route('workouts.store') }}" method="POST">
+	@csrf
 
-			<div class="mb-4">
-				<label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
-				<input type="text" name="name" id="name" placeholder="Workout Name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('name') border-red-500 @enderror" value="{{ old('name') }}">
-				@error('name')
-					<div class="text-red-500 mt-2 text-sm">
-						{{ $message }}
-					</div>
-				@enderror
+		<div class="mb-44">
+			<div class="container w-auto m-5 p-4 text-white bg-slate-900 rounded-lg">
+				<div class="mb-4">
+					<label for="name" class="text-rose-600 text-sm font-bold mb-2">Workout Name</label>
+					<input type="text" name="name" id="name" placeholder="Workout Name" class="appearance-none rounded w-full py-2 px-3 text-white bg-slate-700 leading-tight outline-none active:border-rose-600 focus:border-rose-600">
+					@if ($errors->has('name'))
+						<div class="text-red-500 mt-2 text-sm">{{ $errors->first('name') }}</div>
+					@endif
+				</div>
+
+				<exercise-search-component></exercise-search-component>
+
+				@if ($errors->has('selectedExercises'))
+					<div class="text-red-500 mt-2 text-sm">{{ $errors->first('selectedExercises') }}</div>
+				@endif
+
 			</div>
+		</div>
 
-			<exercise-search-component></exercise-search-component>
-
-			<div class="mt-4">
-				<button type="submit" class="bg-blue-500 text-white px-4 py-3 rounded font-medium w-full">Create Workout</button>
+		<div class="sticky bottom-0">
+			<div class="absolute left-6 bottom-28">
+				<a href="{{ route('workouts.index') }}" class="flex items-center justify-center border-3 bg-slate-900 border-rose-600 hover:bg-rose-600 text-rose-600 hover:text-slate-900 w-12 h-12 rounded-full">
+					<x-svg.cross/>
+				</a>
 			</div>
+			<div class="absolute right-6 bottom-28">
+				<button type="submit" class="flex items-center justify-center border-3 bg-slate-900 border-rose-600 hover:bg-rose-600 text-rose-600 hover:text-slate-900 w-12 h-12 rounded-full">
+					<x-svg.check/>
+				</button>
+			</div>
+		</div>
 
-		</form>
-	</div>
+	</form>
 
 @endsection
