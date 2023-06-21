@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Session extends Model
 {
@@ -26,9 +26,8 @@ class Session extends Model
 		return $this->belongsTo(Workout::class);
 	}
 
-	public function Exercises(): BelongsToMany
+	public function exercises(): HasMany
 	{
-		return $this->belongsToMany(Exercise::class, 'exercises', 'session_id', 'exercise_type_id')
-			->withPivot(['sets', 'reps', 'weight', 'duration']);
+		return $this->hasMany(Exercise::class);
 	}
 }

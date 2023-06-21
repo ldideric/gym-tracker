@@ -10,7 +10,7 @@
 		</div>
 	</nav>
 
-	<nav class="fixed bottom-0 inset-x-0 lg:hidden bg-slate-950 text-rose-600 border-t-3 border-t-rose-600 shadow-md py-4">
+	<nav class="z-10 fixed bottom-0 inset-x-0 lg:hidden bg-slate-950 text-rose-600 border-t-3 border-t-rose-600 shadow-md py-4">
 		<div class="flex justify-around items-center text-[1.6rem]">
 			<a href="{{ route('home') }}">
 				<i class="fas fa-home"></i>

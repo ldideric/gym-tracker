@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Traits\DecimalTrait;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Exercise extends Model
 {
@@ -19,12 +20,12 @@ class Exercise extends Model
 		'duration',
 	];
 
-	public function session()
+	public function session(): BelongsTo
 	{
 		return $this->belongsTo(Session::class);
 	}
 
-	public function exercise_type()
+	public function exerciseType(): BelongsTo
 	{
 		return $this->belongsTo(ExerciseType::class);
 	}

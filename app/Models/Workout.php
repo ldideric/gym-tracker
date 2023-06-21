@@ -27,7 +27,7 @@ class Workout extends Model
 		return $this->belongsToMany(ExerciseType::class, 'workout_exercises', 'workout_id', 'exercise_type_id');
 	}
 
-	public function workoutExercises(): BelongsToMany
+	public function workout_exercises(): BelongsToMany
 	{
 		return $this->belongsToMany(WorkoutExercise::class);
 	}

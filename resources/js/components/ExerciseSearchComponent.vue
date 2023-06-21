@@ -1,9 +1,11 @@
 <template>
 	<div>
-		<label class="text-rose-600 text-sm font-bold mb-2">Exercises</label>
-		<ul class="mb-3">
+		<div class="flex justify-center">
+			<label class="bg-slate-700 text-sm font-bold mb-2 rounded px-4 py-2 w-[33%] text-center">Exercises</label>
+		</div>
+		<ul class="mb-6">
 			<li v-if="selectedExercises.length === 0" class="bg-slate-700 p-2 rounded mb-1 text-white">No exercises selected.</li>
-			<li v-for="exercise in selectedExercises" :key="exercise.id" class="bg-slate-700 p-2 rounded mb-1 flex justify-between items-center text-white">
+			<li v-for="exercise in selectedExercises" :key="exercise.id" class="bg-rose-600 p-2 rounded mb-1 flex justify-between items-center text-black font-bold">
 				{{ exercise.name }}
 				<button type="button" @click="removeExercise(exercise)" class="text-rose-600 bg-slate-900 hover:bg-rose-600 hover:text-slate-900 font-bold p-1 rounded-lg">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -14,9 +16,11 @@
 			</li>
 		</ul>
 
-		<div class="mb-4 relative">
-			<ul>
-				<label v-if="exercises.length !== 0" class="text-rose-600 text-sm font-bold mb-2">Results</label>
+		<div class="mb-2 relative">
+			<ul class="mb-6">
+				<div v-if="exercises.length !== 0" class="flex justify-center">
+					<label class="bg-slate-700 text-sm font-bold mb-2 rounded px-4 py-2 w-[33%] text-center">Results</label>
+				</div>
 				<li v-for="exercise in exercises" :key="exercise.id" class="bg-slate-700 p-2 rounded mb-1 flex justify-between items-center text-white">
 					{{ exercise.name }}
 					<button type="button" @click="addExercise(exercise)" class="text-rose-600 bg-slate-900 hover:bg-rose-600 hover:text-slate-900 font-bold p-1 rounded-lg">
@@ -27,7 +31,9 @@
 				</li>
 			</ul>
 
-			<label class="text-rose-600 text-sm font-bold mb-2">Search</label>
+			<div class="flex justify-center">
+				<label class="bg-slate-700 text-sm font-bold mb-2 rounded px-4 py-2 w-[33%] text-center">Search</label>
+			</div>
 			<input type="text" name="search" id="search" v-model="search" @input="searchExercises" @keydown.enter.prevent placeholder="Search Exercises" class="shadow appearance-none border rounded w-full py-2 px-3 pr-10 text-white bg-slate-700 leading-tight focus:outline-none focus:shadow-outline">
 		</div>
 

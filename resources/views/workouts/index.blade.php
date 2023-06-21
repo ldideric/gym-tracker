@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('title', 'Overview')
+@section('title', 'Workouts')
 
 @section('content')
 
@@ -30,13 +30,13 @@
 	</div>
 
 	@if (auth()->user()->workouts->count())
-	<div class="sticky bottom-0">
-		<div class="absolute right-6 bottom-28">
-			<a href="{{ route('workouts.create') }}" class="flex items-center justify-center border-3 bg-slate-900 border-rose-600 hover:bg-rose-600 text-rose-600 hover:text-slate-900 w-12 h-12 rounded-full">
-				<x-svg.plus/>
-			</a>
+		<div class="sticky bottom-0">
+			<div class="absolute right-6 bottom-28">
+				<a href="{{ route('workouts.create') }}" class="flex items-center justify-center border-3 bg-slate-900 border-rose-600 hover:bg-rose-600 text-rose-600 hover:text-slate-900 w-12 h-12 rounded-full">
+					<x-svg.plus/>
+				</a>
+			</div>
 		</div>
-	</div>
 	@endif
 
 @endsection

@@ -14,8 +14,10 @@
 
 		<div class="mb-44">
 			<div class="container w-auto m-5 p-4 text-white bg-slate-900 rounded-lg">
-				<div class="mb-4">
-					<label for="name" class="text-rose-600 text-sm font-bold mb-2">Workout Name</label>
+				<div class="mb-6">
+					<div class="flex justify-center">
+						<label class="bg-slate-700 text-sm font-bold mb-2 rounded px-4 py-2 w-[33%] text-center">Name</label>
+					</div>
 					<input type="text" name="name" id="name" placeholder="Workout Name" class="appearance-none rounded w-full py-2 px-3 text-white bg-slate-700 leading-tight outline-none active:border-rose-600 focus:border-rose-600" value="{{ $workout->name }}">
 					@if ($errors->has('name'))
 						<div class="text-red-500 mt-2 text-sm">{{ $errors->first('name') }}</div>
