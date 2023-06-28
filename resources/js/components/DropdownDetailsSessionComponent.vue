@@ -14,7 +14,7 @@
 		
 					<div v-if="activeIndexes.includes(index)" class="grid grid-cols-1 mt-2">
 						<div v-for="(exerciseType, name) in exerciseTypes" :key="name" class="my-2">
-							<a :href="showUrlPattern.replace('__ID__', name)" class="bg-rose-600 text-white rounded-md p-2">
+							<a :href="showUrlPattern.replace('__ID__', exerciseType[0].exercise_type_id)" class="bg-rose-600 text-white rounded-md p-2">
 								{{ name }}
 							</a>
 						</div>
