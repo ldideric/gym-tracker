@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class SessionFactory extends Factory
 {
-	public function definition(): array
-	{
-		return [];
-	}
+    public function definition(): array
+    {
+        return [];
+    }
 }

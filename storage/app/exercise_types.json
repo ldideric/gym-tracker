@@ -1,814 +1,814 @@
 [
-	{
-		"groupName": "Chest",
-		"exercises": [
-			{
-				"exerciseName": "Bench Press",
-				"description": "The bench press is a compound exercise that primarily targets the pectoralis major muscles. It involves lying on a bench and pressing a weighted barbell away from the chest.",
-				"caloriesBurnedPerMinute": 8.3,
-				"targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
-			},
-			{
-				"exerciseName": "Push-ups",
-				"description": "Push-ups are a bodyweight exercise that targets the chest muscles. It involves maintaining a plank position and pushing the body up and down by extending and flexing the arms.",
-				"caloriesBurnedPerMinute": 7.5,
-				"targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
-			},
-			{
-				"exerciseName": "Dumbbell Flyes",
-				"description": "Dumbbell flyes are isolation exercises that primarily target the pectoralis major muscles. It involves lying on a bench and horizontally extending the arms while holding dumbbells.",
-				"caloriesBurnedPerMinute": 5.8,
-				"targets": ["Pectoralis major", "Anterior deltoids"]
-			},
-			{
-				"exerciseName": "Chest Press Machine",
-				"description": "The chest press machine is a resistance exercise that targets the chest muscles. It involves pushing a weighted platform away from the chest using a machine.",
-				"caloriesBurnedPerMinute": 6.2,
-				"targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
-			},
-			{
-				"exerciseName": "Incline Bench Press",
-				"description": "The incline bench press is a variation of the bench press that primarily targets the upper portion of the pectoralis major muscles. It involves lying on an inclined bench and pressing a weighted barbell away from the chest.",
-				"caloriesBurnedPerMinute": 8.1,
-				"targets": [
-					"Upper pectoralis major",
-					"Triceps",
-					"Anterior deltoids"
-				]
-			},
-			{
-				"exerciseName": "Cable Crossovers",
-				"description": "Cable crossovers are isolation exercises that primarily target the pectoralis major muscles. It involves standing in the middle of cable machines and crossing the arms in front of the body.",
-				"caloriesBurnedPerMinute": 6.5,
-				"targets": ["Pectoralis major", "Anterior deltoids"]
-			},
-			{
-				"exerciseName": "Dips",
-				"description": "Dips are a bodyweight exercise that targets the chest, triceps, and shoulders. It involves gripping parallel bars and lowering the body by bending the arms, then pushing back up.",
-				"caloriesBurnedPerMinute": 8.2,
-				"targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
-			},
-			{
-				"exerciseName": "Pec Deck Machine",
-				"description": "The pec deck machine is a resistance exercise that primarily targets the chest muscles. It involves sitting in a machine and pushing padded levers together in front of the chest.",
-				"caloriesBurnedPerMinute": 5.6,
-				"targets": ["Pectoralis major", "Anterior deltoids"]
-			},
-			{
-				"exerciseName": "Incline Dumbbell Press",
-				"description": "Incline dumbbell press is an exercise that primarily targets the upper portion of the pectoralis major muscles. It involves lying on an inclined bench and pressing dumbbells away from the chest.",
-				"caloriesBurnedPerMinute": 6.9,
-				"targets": ["Upper pectoralis major", "Anterior deltoids"]
-			},
-			{
-				"exerciseName": "Decline Bench Press",
-				"description": "Decline bench press is a variation of the bench press that primarily targets the lower portion of the pectoralis major muscles. It involves lying on a declined bench and pressing a weighted barbell away from the chest.",
-				"caloriesBurnedPerMinute": 7.8,
-				"targets": [
-					"Lower pectoralis major",
-					"Triceps",
-					"Anterior deltoids"
-				]
-			},
-			{
-				"exerciseName": "Chest Squeeze Press",
-				"description": "Chest squeeze press is an exercise that primarily targets the inner portion of the pectoralis major muscles. It involves holding a medicine ball or weight plate between the palms and pressing it together in front of the chest.",
-				"caloriesBurnedPerMinute": 6.3,
-				"targets": [
-					"Inner pectoralis major",
-					"Triceps",
-					"Anterior deltoids"
-				]
-			},
-			{
-				"exerciseName": "Cable Chest Press",
-				"description": "Cable chest press is a resistance exercise that targets the chest muscles. It involves standing in front of cable machines and pressing the handles forward.",
-				"caloriesBurnedPerMinute": 6.4,
-				"targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
-			},
-			{
-				"exerciseName": "Medicine Ball Push-ups",
-				"description": "Medicine ball push-ups are a variation of push-ups that adds instability and engages more muscle groups. It involves placing hands on medicine balls and performing push-ups.",
-				"caloriesBurnedPerMinute": 8.0,
-				"targets": [
-					"Pectoralis major",
-					"Triceps",
-					"Anterior deltoids",
-					"Core muscles"
-				]
-			},
-			{
-				"exerciseName": "Chest Dip Machine",
-				"description": "The chest dip machine is a resistance exercise that primarily targets the chest muscles. It involves using a machine with parallel bars and pushing the handles down and up.",
-				"caloriesBurnedPerMinute": 7.1,
-				"targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
-			},
-			{
-				"exerciseName": "Decline Dumbbell Flyes",
-				"description": "Decline dumbbell flyes are isolation exercises that primarily target the lower portion of the pectoralis major muscles. It involves lying on a declined bench and horizontally extending the arms while holding dumbbells.",
-				"caloriesBurnedPerMinute": 5.9,
-				"targets": ["Lower pectoralis major", "Anterior deltoids"]
-			}
-		]
-	},
-	{
-		"groupName": "Back",
-		"exercises": [
-			{
-				"exerciseName": "Deadlifts",
-				"description": "Deadlifts are compound exercises that target multiple muscles, including the back muscles. It involves lifting a barbell or weighted object from the ground to a standing position while maintaining proper form.",
-				"caloriesBurnedPerMinute": 9.8,
-				"targets": [
-					"Erector spinae",
-					"Trapezius",
-					"Rhomboids",
-					"Latissimus dorsi",
-					"Hamstrings",
-					"Glutes"
-				]
-			},
-			{
-				"exerciseName": "Pull-ups",
-				"description": "Pull-ups are bodyweight exercises that primarily target the back muscles. It involves hanging from a bar and pulling the body up until the chin reaches or clears the bar.",
-				"caloriesBurnedPerMinute": 8.8,
-				"targets": [
-					"Latissimus dorsi",
-					"Trapezius",
-					"Rhomboids",
-					"Biceps"
-				]
-			},
-			{
-				"exerciseName": "Bent Over Rows",
-				"description": "Bent over rows are compound exercises that primarily target the back muscles. It involves bending over at the waist, holding a barbell or dumbbells, and pulling the weight up towards the lower chest.",
-				"caloriesBurnedPerMinute": 6.7,
-				"targets": [
-					"Latissimus dorsi",
-					"Rhomboids",
-					"Trapezius",
-					"Erector spinae",
-					"Biceps"
-				]
-			},
-			{
-				"exerciseName": "Lat Pulldowns",
-				"description": "Lat pulldowns are isolation exercises that primarily target the latissimus dorsi muscles. It involves sitting at a cable machine, gripping a bar or handles, and pulling it down towards the upper chest.",
-				"caloriesBurnedPerMinute": 6.1,
-				"targets": [
-					"Latissimus dorsi",
-					"Rhomboids",
-					"Trapezius",
-					"Biceps"
-				]
-			},
-			{
-				"exerciseName": "T-Bar Rows",
-				"description": "T-bar rows are compound exercises that primarily target the back muscles. It involves leaning over a T-bar machine or fixed barbell, gripping the handles, and rowing the weight towards the abdomen.",
-				"caloriesBurnedPerMinute": 7.2,
-				"targets": [
-					"Latissimus dorsi",
-					"Rhomboids",
-					"Trapezius",
-					"Biceps"
-				]
-			},
-			{
-				"exerciseName": "Seated Cable Rows",
-				"description": "Seated cable rows are isolation exercises that primarily target the back muscles. It involves sitting on a cable machine, gripping the handles, and pulling them towards the abdomen while keeping the back straight.",
-				"caloriesBurnedPerMinute": 6.3,
-				"targets": [
-					"Latissimus dorsi",
-					"Rhomboids",
-					"Trapezius",
-					"Biceps"
-				]
-			},
-			{
-				"exerciseName": "Good Mornings",
-				"description": "Good mornings are compound exercises that primarily target the lower back muscles. It involves standing with a barbell across the back of the shoulders and bending forward at the waist while keeping the back straight.",
-				"caloriesBurnedPerMinute": 5.5,
-				"targets": ["Erector spinae", "Hamstrings", "Glutes"]
-			},
-			{
-				"exerciseName": "Hyperextensions",
-				"description": "Hyperextensions, also known as back extensions, are isolation exercises that primarily target the lower back muscles. It involves lying face down on a hyperextension bench and raising the upper body until it's in line with the legs.",
-				"caloriesBurnedPerMinute": 5.7,
-				"targets": ["Erector spinae", "Glutes", "Hamstrings"]
-			},
-			{
-				"exerciseName": "Single Arm Dumbbell Rows",
-				"description": "Single arm dumbbell rows are isolation exercises that primarily target the back muscles. It involves bending over with one hand and knee on a bench, and rowing a dumbbell towards the abdomen with the free hand.",
-				"caloriesBurnedPerMinute": 5.9,
-				"targets": [
-					"Latissimus dorsi",
-					"Rhomboids",
-					"Trapezius",
-					"Biceps"
-				]
-			},
-			{
-				"exerciseName": "Chin-up Machine",
-				"description": "The chin-up machine is a variation of the pull-up exercise using an assisted machine. It primarily targets the back muscles and allows for adjustable assistance to make the exercise easier.",
-				"caloriesBurnedPerMinute": 7.5,
-				"targets": [
-					"Latissimus dorsi",
-					"Trapezius",
-					"Rhomboids",
-					"Biceps"
-				]
-			},
-			{
-				"exerciseName": "Wide Grip Seated Cable Rows",
-				"description": "Wide grip seated cable rows are isolation exercises that primarily target the back muscles. It involves sitting on a cable machine, gripping the handles with a wide grip, and pulling them towards the abdomen.",
-				"caloriesBurnedPerMinute": 6.6,
-				"targets": [
-					"Latissimus dorsi",
-					"Rhomboids",
-					"Trapezius",
-					"Biceps"
-				]
-			},
-			{
-				"exerciseName": "Inverted Rows",
-				"description": "Inverted rows, also known as body rows, are bodyweight exercises that primarily target the back muscles. It involves setting up a bar at waist height, lying underneath it, and pulling the chest towards the bar.",
-				"caloriesBurnedPerMinute": 6.8,
-				"targets": [
-					"Latissimus dorsi",
-					"Rhomboids",
-					"Trapezius",
-					"Biceps"
-				]
-			},
-			{
-				"exerciseName": "Renegade Rows",
-				"description": "Renegade rows are compound exercises that primarily target the back muscles and also engage the core. It involves assuming a push-up position while holding dumbbells and alternating rowing one arm at a time.",
-				"caloriesBurnedPerMinute": 7.4,
-				"targets": [
-					"Latissimus dorsi",
-					"Rhomboids",
-					"Trapezius",
-					"Biceps",
-					"Core muscles"
-				]
-			},
-			{
-				"exerciseName": "Pullover Machine",
-				"description": "The pullover machine is a resistance exercise that primarily targets the back muscles. It involves sitting in a machine, gripping a bar or handles, and pulling it overhead and behind the head.",
-				"caloriesBurnedPerMinute": 5.4,
-				"targets": ["Latissimus dorsi", "Trapezius", "Rhomboids"]
-			},
-			{
-				"exerciseName": "Back Extension Machine",
-				"description": "The back extension machine is a resistance exercise that primarily targets the lower back muscles. It involves lying face down on a machine, securing the feet, and extending the back against resistance.",
-				"caloriesBurnedPerMinute": 5.6,
-				"targets": ["Erector spinae", "Glutes", "Hamstrings"]
-			}
-		]
-	},
-	{
-		"groupName": "Shoulders",
-		"exercises": [
-			{
-				"exerciseName": "Military Press",
-				"description": "Military press, also known as overhead press, is a compound exercise that primarily targets the shoulder muscles. It involves standing or sitting and pressing a barbell or dumbbells overhead.",
-				"caloriesBurnedPerMinute": 7.1,
-				"targets": ["Deltoids", "Triceps"]
-			},
-			{
-				"exerciseName": "Dumbbell Shoulder Press",
-				"description": "Dumbbell shoulder press is a compound exercise that primarily targets the shoulder muscles. It involves sitting or standing and pressing dumbbells overhead while keeping the palms facing forward.",
-				"caloriesBurnedPerMinute": 6.4,
-				"targets": ["Deltoids", "Triceps"]
-			},
-			{
-				"exerciseName": "Arnold Press",
-				"description": "Arnold press is a variation of the shoulder press that targets the shoulder muscles. It involves sitting or standing and rotating the palms from a neutral grip to a supinated grip while pressing the dumbbells overhead.",
-				"caloriesBurnedPerMinute": 6.7,
-				"targets": ["Deltoids", "Triceps"]
-			},
-			{
-				"exerciseName": "Lateral Raises",
-				"description": "Lateral raises are isolation exercises that primarily target the side (lateral) head of the shoulder muscles. It involves standing or sitting and lifting dumbbells or other weights out to the sides until the arms are parallel to the ground.",
-				"caloriesBurnedPerMinute": 4.5,
-				"targets": ["Deltoids"]
-			},
-			{
-				"exerciseName": "Front Raises",
-				"description": "Front raises are isolation exercises that primarily target the front (anterior) head of the shoulder muscles. It involves standing or sitting and lifting dumbbells or other weights in front of the body until the arms are parallel to the ground.",
-				"caloriesBurnedPerMinute": 4.3,
-				"targets": ["Deltoids"]
-			},
-			{
-				"exerciseName": "Upright Rows",
-				"description": "Upright rows are compound exercises that primarily target the shoulder muscles. It involves holding a barbell or dumbbells in front of the thighs and lifting them straight up towards the chin while keeping the elbows higher than the forearms.",
-				"caloriesBurnedPerMinute": 5.6,
-				"targets": ["Deltoids", "Trapezius"]
-			},
-			{
-				"exerciseName": "Shoulder Shrugs",
-				"description": "Shoulder shrugs are isolation exercises that primarily target the trapezius muscles. It involves standing or sitting and lifting the shoulders up towards the ears, then lowering them back down.",
-				"caloriesBurnedPerMinute": 4.0,
-				"targets": ["Trapezius"]
-			},
-			{
-				"exerciseName": "Face Pulls",
-				"description": "Face pulls are isolation exercises that primarily target the rear (posterior) head of the shoulder muscles. It involves attaching a rope or handle to a cable machine at face height, pulling the rope towards the face, and squeezing the shoulder blades together.",
-				"caloriesBurnedPerMinute": 5.3,
-				"targets": ["Deltoids", "Rear deltoids", "Trapezius"]
-			},
-			{
-				"exerciseName": "Seated Dumbbell Press",
-				"description": "Seated dumbbell press is a compound exercise that primarily targets the shoulder muscles. It involves sitting on a bench and pressing dumbbells overhead while keeping the palms facing forward.",
-				"caloriesBurnedPerMinute": 5.8,
-				"targets": ["Deltoids", "Triceps"]
-			},
-			{
-				"exerciseName": "Barbell Push Press",
-				"description": "Barbell push press is a compound exercise that primarily targets the shoulder muscles. It involves standing and using leg drive to assist in pressing a barbell overhead.",
-				"caloriesBurnedPerMinute": 6.9,
-				"targets": ["Deltoids", "Triceps", "Legs"]
-			},
-			{
-				"exerciseName": "Reverse Flyes",
-				"description": "Reverse flyes are isolation exercises that primarily target the rear (posterior) head of the shoulder muscles. It involves bending over at the waist, holding dumbbells or other weights, and lifting the arms out to the sides while keeping them parallel to the ground.",
-				"caloriesBurnedPerMinute": 4.7,
-				"targets": ["Deltoids", "Rear deltoids"]
-			},
-			{
-				"exerciseName": "Lateral Dumbbell Raises",
-				"description": "Lateral dumbbell raises are isolation exercises that primarily target the side (lateral) head of the shoulder muscles. It involves standing or sitting and lifting dumbbells out to the sides until the arms are parallel to the ground.",
-				"caloriesBurnedPerMinute": 4.4,
-				"targets": ["Deltoids"]
-			},
-			{
-				"exerciseName": "Smith Machine Shoulder Press",
-				"description": "Smith machine shoulder press is a compound exercise that primarily targets the shoulder muscles. It involves sitting or standing and pressing a barbell attached to a guided track system (Smith machine) overhead.",
-				"caloriesBurnedPerMinute": 6.2,
-				"targets": ["Deltoids", "Triceps"]
-			},
-			{
-				"exerciseName": "Cable Lateral Raises",
-				"description": "Cable lateral raises are isolation exercises that primarily target the side (lateral) head of the shoulder muscles. It involves standing or sitting and lifting cable handles out to the sides until the arms are parallel to the ground.",
-				"caloriesBurnedPerMinute": 5.1,
-				"targets": ["Deltoids"]
-			},
-			{
-				"exerciseName": "Rear Delt Flyes",
-				"description": "Rear delt flyes are isolation exercises that primarily target the rear (posterior) head of the shoulder muscles. It involves bending over at the waist, holding dumbbells or other weights, and lifting the arms out to the sides while keeping the elbows slightly bent.",
-				"caloriesBurnedPerMinute": 4.9,
-				"targets": ["Rear deltoids"]
-			}
-		]
-	},
-	{
-		"groupName": "Biceps",
-		"exercises": [
-			{
-				"exerciseName": "Barbell Curls",
-				"description": "Barbell curls are isolation exercises that primarily target the biceps muscles. It involves holding a barbell with an underhand grip and curling it up towards the shoulders while keeping the upper arms stationary.",
-				"caloriesBurnedPerMinute": 4.2,
-				"targets": ["Biceps"]
-			},
-			{
-				"exerciseName": "Dumbbell Curls",
-				"description": "Dumbbell curls are isolation exercises that primarily target the biceps muscles. It involves holding dumbbells with an underhand grip and curling them up towards the shoulders while keeping the upper arms stationary.",
-				"caloriesBurnedPerMinute": 4.0,
-				"targets": ["Biceps"]
-			},
-			{
-				"exerciseName": "Hammer Curls",
-				"description": "Hammer curls are isolation exercises that primarily target the biceps muscles and also engage the brachialis. It involves holding dumbbells with a neutral grip and curling them up towards the shoulders while keeping the upper arms stationary.",
-				"caloriesBurnedPerMinute": 3.8,
-				"targets": ["Biceps", "Brachialis"]
-			},
-			{
-				"exerciseName": "Preacher Curls",
-				"description": "Preacher curls are isolation exercises that primarily target the biceps muscles. It involves sitting at a preacher curl bench, resting the upper arms on the pad, and curling a barbell or dumbbells towards the shoulders.",
-				"caloriesBurnedPerMinute": 4.4,
-				"targets": ["Biceps"]
-			},
-			{
-				"exerciseName": "Concentration Curls",
-				"description": "Concentration curls are isolation exercises that primarily target the biceps muscles. It involves sitting on a bench, resting the elbow on the inner thigh, and curling a dumbbell towards the shoulder.",
-				"caloriesBurnedPerMinute": 3.6,
-				"targets": ["Biceps"]
-			},
-			{
-				"exerciseName": "EZ Bar Curls",
-				"description": "EZ bar curls are isolation exercises that primarily target the biceps muscles. It involves holding an EZ bar with an underhand grip and curling it up towards the shoulders while keeping the upper arms stationary.",
-				"caloriesBurnedPerMinute": 4.1,
-				"targets": ["Biceps"]
-			},
-			{
-				"exerciseName": "Chin-ups",
-				"description": "Chin-ups are bodyweight exercises that primarily target the biceps muscles. It involves hanging from a bar with an underhand grip and pulling the body up until the chin clears the bar.",
-				"caloriesBurnedPerMinute": 7.5,
-				"targets": ["Biceps", "Back"]
-			},
-			{
-				"exerciseName": "Cable Curls",
-				"description": "Cable curls are isolation exercises that primarily target the biceps muscles. It involves standing or sitting in front of a cable machine, gripping the handles, and curling them up towards the shoulders.",
-				"caloriesBurnedPerMinute": 4.3,
-				"targets": ["Biceps"]
-			},
-			{
-				"exerciseName": "Zottman Curls",
-				"description": "Zottman curls are compound exercises that primarily target the biceps muscles and also engage the brachialis and brachioradialis. It involves holding dumbbells with a supinated grip during the curling phase and rotating to a pronated grip during the lowering phase.",
-				"caloriesBurnedPerMinute": 4.6,
-				"targets": ["Biceps", "Brachialis", "Brachioradialis"]
-			},
-			{
-				"exerciseName": "Spider Curls",
-				"description": "Spider curls are isolation exercises that primarily target the biceps muscles. It involves lying face down on an incline bench, resting the upper arms on the bench, and curling a barbell or dumbbells towards the shoulders.",
-				"caloriesBurnedPerMinute": 3.9,
-				"targets": ["Biceps"]
-			},
-			{
-				"exerciseName": "Alternating Incline Dumbbell Curls",
-				"description": "Alternating incline dumbbell curls are isolation exercises that primarily target the biceps muscles. It involves sitting on an incline bench, holding dumbbells with an underhand grip, and curling them alternately towards the shoulders.",
-				"caloriesBurnedPerMinute": 4.2,
-				"targets": ["Biceps"]
-			},
-			{
-				"exerciseName": "Hammer Strength Machine Curls",
-				"description": "Hammer Strength machine curls are isolation exercises that primarily target the biceps muscles. It involves using a Hammer Strength machine with handles or grips to curl the weight towards the shoulders.",
-				"caloriesBurnedPerMinute": 4.5,
-				"targets": ["Biceps"]
-			},
-			{
-				"exerciseName": "Barbell Drag Curls",
-				"description": "Barbell drag curls are isolation exercises that primarily target the biceps muscles. It involves holding a barbell with an underhand grip and dragging it up along the front of the body towards the shoulders while keeping the elbows back.",
-				"caloriesBurnedPerMinute": 4.2,
-				"targets": ["Biceps"]
-			},
-			{
-				"exerciseName": "Reverse Grip Barbell Curls",
-				"description": "Reverse grip barbell curls are isolation exercises that primarily target the biceps muscles. It involves holding a barbell with an overhand grip and curling it up towards the shoulders while keeping the upper arms stationary.",
-				"caloriesBurnedPerMinute": 4.0,
-				"targets": ["Biceps"]
-			},
-			{
-				"exerciseName": "Cross Body Hammer Curls",
-				"description": "Cross body hammer curls are isolation exercises that primarily target the biceps muscles. It involves holding dumbbells with a neutral grip and curling them across the body towards the opposite shoulder.",
-				"caloriesBurnedPerMinute": 3.7,
-				"targets": ["Biceps"]
-			}
-		]
-	},
-	{
-		"groupName": "Triceps",
-		"exercises": [
-			{
-				"exerciseName": "Tricep Dips",
-				"description": "Tricep dips are bodyweight exercises that primarily target the triceps muscles. It involves gripping parallel bars, lowering the body by bending the arms, and then pushing back up.",
-				"caloriesBurnedPerMinute": 6.2,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Close Grip Bench Press",
-				"description": "Close grip bench press is a compound exercise that primarily targets the triceps muscles. It involves lying on a bench and pressing a barbell with a narrow grip away from the chest.",
-				"caloriesBurnedPerMinute": 5.9,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Skull Crushers",
-				"description": "Skull crushers, also known as lying tricep extensions, are isolation exercises that primarily target the triceps muscles. It involves lying on a bench, holding a barbell or dumbbells with an overhand grip, and lowering the weight towards the forehead while keeping the upper arms stationary.",
-				"caloriesBurnedPerMinute": 4.5,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Tricep Pushdowns",
-				"description": "Tricep pushdowns are isolation exercises that primarily target the triceps muscles. It involves standing in front of a cable machine, gripping the bar or handle, and pushing it down until the arms are fully extended.",
-				"caloriesBurnedPerMinute": 4.3,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Overhead Tricep Extension",
-				"description": "Overhead tricep extension is an isolation exercise that primarily targets the triceps muscles. It involves holding a dumbbell or barbell overhead and lowering it behind the head by bending the elbows.",
-				"caloriesBurnedPerMinute": 4.2,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Dumbbell Tricep Kickbacks",
-				"description": "Dumbbell tricep kickbacks are isolation exercises that primarily target the triceps muscles. It involves bending over at the waist, holding dumbbells with an overhand grip, and extending the arms back by straightening the elbows.",
-				"caloriesBurnedPerMinute": 4.1,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Tricep Rope Pushdowns",
-				"description": "Tricep rope pushdowns are isolation exercises that primarily target the triceps muscles. It involves standing in front of a cable machine, gripping the rope handles, and pushing them down until the arms are fully extended.",
-				"caloriesBurnedPerMinute": 4.0,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Diamond Push-ups",
-				"description": "Diamond push-ups are bodyweight exercises that primarily target the triceps muscles. It involves assuming a push-up position with the hands close together, forming a diamond shape, and pushing the body up and down by extending and flexing the arms.",
-				"caloriesBurnedPerMinute": 6.0,
-				"targets": ["Triceps", "Chest"]
-			},
-			{
-				"exerciseName": "Dumbbell Tricep Extensions",
-				"description": "Dumbbell tricep extensions are isolation exercises that primarily target the triceps muscles. It involves holding dumbbells overhead with an overhand grip and lowering them behind the head by bending the elbows.",
-				"caloriesBurnedPerMinute": 4.4,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Lying Tricep Extensions",
-				"description": "Lying tricep extensions, also known as skull crushers, are isolation exercises that primarily target the triceps muscles. It involves lying on a bench, holding a barbell or dumbbells with an overhand grip, and lowering the weight towards the forehead while keeping the upper arms stationary.",
-				"caloriesBurnedPerMinute": 4.5,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Seated Tricep Press",
-				"description": "Seated tricep press is an isolation exercise that primarily targets the triceps muscles. It involves sitting on a bench, holding dumbbells or a barbell with an overhand grip, and pressing the weight overhead by extending the elbows.",
-				"caloriesBurnedPerMinute": 4.3,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "EZ Bar Skull Crushers",
-				"description": "EZ bar skull crushers are isolation exercises that primarily target the triceps muscles. It involves lying on a bench, holding an EZ bar with an overhand grip, and lowering the weight towards the forehead while keeping the upper arms stationary.",
-				"caloriesBurnedPerMinute": 4.5,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Cable Overhead Tricep Extensions",
-				"description": "Cable overhead tricep extensions are isolation exercises that primarily target the triceps muscles. It involves standing facing away from a cable machine, holding the cable attachment with both hands, and extending the arms overhead by straightening the elbows.",
-				"caloriesBurnedPerMinute": 4.1,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Tricep Bench Dips",
-				"description": "Tricep bench dips are bodyweight exercises that primarily target the triceps muscles. It involves sitting on the edge of a bench, gripping the edge with the hands, and lowering the body down and up by bending and extending the arms.",
-				"caloriesBurnedPerMinute": 6.1,
-				"targets": ["Triceps"]
-			},
-			{
-				"exerciseName": "Single Arm Cable Pushdowns",
-				"description": "Single arm cable pushdowns are isolation exercises that primarily target the triceps muscles. It involves standing in front of a cable machine, gripping the handle with one hand, and pushing it down until the arm is fully extended.",
-				"caloriesBurnedPerMinute": 3.9,
-				"targets": ["Triceps"]
-			}
-		]
-	},
-	{
-		"groupName": "Legs",
-		"exercises": [
-			{
-				"exerciseName": "Squats",
-				"description": "Squats are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves standing with a barbell across the upper back, lowering the body by bending the knees, and then pushing back up.",
-				"caloriesBurnedPerMinute": 8.0,
-				"targets": ["Quadriceps", "Hamstrings", "Glutes"]
-			},
-			{
-				"exerciseName": "Deadlifts",
-				"description": "Deadlifts are compound exercises that target multiple muscles, including the legs, back, and glutes. It involves lifting a barbell or weighted object from the ground to a standing position while maintaining proper form.",
-				"caloriesBurnedPerMinute": 9.8,
-				"targets": ["Quadriceps", "Hamstrings", "Glutes", "Back"]
-			},
-			{
-				"exerciseName": "Leg Press",
-				"description": "Leg press is a machine exercise that primarily targets the leg muscles, including the quadriceps, hamstrings, and glutes. It involves sitting on a sled and pushing the weight away by extending the legs.",
-				"caloriesBurnedPerMinute": 6.5,
-				"targets": ["Quadriceps", "Hamstrings", "Glutes"]
-			},
-			{
-				"exerciseName": "Lunges",
-				"description": "Lunges are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves stepping forward with one leg, lowering the body by bending the front and back knees, and then pushing back up.",
-				"caloriesBurnedPerMinute": 6.9,
-				"targets": ["Quadriceps", "Hamstrings", "Glutes"]
-			},
-			{
-				"exerciseName": "Leg Extensions",
-				"description": "Leg extensions are isolation exercises that primarily target the quadriceps muscles. It involves sitting on a machine, lifting the weight by extending the legs, and then lowering it back down.",
-				"caloriesBurnedPerMinute": 4.2,
-				"targets": ["Quadriceps"]
-			},
-			{
-				"exerciseName": "Leg Curls",
-				"description": "Leg curls are isolation exercises that primarily target the hamstring muscles. It involves lying face down on a machine, bending the legs by curling the weight towards the buttocks, and then lowering it back down.",
-				"caloriesBurnedPerMinute": 4.5,
-				"targets": ["Hamstrings"]
-			},
-			{
-				"exerciseName": "Calf Raises",
-				"description": "Calf raises are isolation exercises that primarily target the calf muscles. It involves standing on the balls of the feet, lifting the heels as high as possible, and then lowering them back down.",
-				"caloriesBurnedPerMinute": 4.0,
-				"targets": ["Calves"]
-			},
-			{
-				"exerciseName": "Glute Bridges",
-				"description": "Glute bridges are compound exercises that primarily target the glute muscles. It involves lying on the back, bending the knees, and lifting the hips off the ground by squeezing the glutes.",
-				"caloriesBurnedPerMinute": 4.3,
-				"targets": ["Glutes"]
-			},
-			{
-				"exerciseName": "Romanian Deadlifts",
-				"description": "Romanian deadlifts are compound exercises that primarily target the hamstring muscles and also engage the glutes and lower back. It involves holding a barbell with an overhand grip, bending forward at the hips, and lowering the weight while keeping the back straight.",
-				"caloriesBurnedPerMinute": 6.3,
-				"targets": ["Hamstrings", "Glutes", "Lower Back"]
-			},
-			{
-				"exerciseName": "Hack Squats",
-				"description": "Hack squats are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves standing on a platform with a barbell behind the legs, lowering the body by bending the knees, and then pushing back up.",
-				"caloriesBurnedPerMinute": 6.8,
-				"targets": ["Quadriceps", "Hamstrings", "Glutes"]
-			},
-			{
-				"exerciseName": "Bulgarian Split Squats",
-				"description": "Bulgarian split squats are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves standing in a split stance with one foot elevated behind, lowering the body by bending the front knee, and then pushing back up.",
-				"caloriesBurnedPerMinute": 7.1,
-				"targets": ["Quadriceps", "Hamstrings", "Glutes"]
-			},
-			{
-				"exerciseName": "Step-ups",
-				"description": "Step-ups are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves stepping onto a platform with one leg, pushing through the heel to lift the body up, and then stepping back down.",
-				"caloriesBurnedPerMinute": 7.3,
-				"targets": ["Quadriceps", "Hamstrings", "Glutes"]
-			},
-			{
-				"exerciseName": "Seated Calf Raises",
-				"description": "Seated calf raises are isolation exercises that primarily target the calf muscles. It involves sitting on a machine, placing the balls of the feet on a platform, and lifting the weight by raising the heels.",
-				"caloriesBurnedPerMinute": 3.9,
-				"targets": ["Calves"]
-			},
-			{
-				"exerciseName": "Sumo Squats",
-				"description": "Sumo squats are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves standing with a wide stance, toes pointed out, and lowering the body by bending the knees in a squatting motion.",
-				"caloriesBurnedPerMinute": 7.0,
-				"targets": ["Quadriceps", "Hamstrings", "Glutes"]
-			},
-			{
-				"exerciseName": "Leg Press Calf Raises",
-				"description": "Leg press calf raises are isolation exercises that primarily target the calf muscles. It involves sitting on a leg press machine, placing the balls of the feet on a platform, and lifting the weight by raising the heels.",
-				"caloriesBurnedPerMinute": 4.1,
-				"targets": ["Calves"]
-			}
-		]
-	},
-	{
-		"groupName": "Abs",
-		"exercises": [
-			{
-				"exerciseName": "Plank",
-				"description": "Plank is an isometric exercise that primarily targets the core muscles, including the abs and lower back. It involves maintaining a position similar to a push-up, with the body straight and supported by the forearms and toes.",
-				"caloriesBurnedPerMinute": 3.8,
-				"targets": ["Abs", "Lower Back"]
-			},
-			{
-				"exerciseName": "Crunches",
-				"description": "Crunches are isolation exercises that primarily target the abdominal muscles. It involves lying on the back, bending the knees, and lifting the upper body towards the knees by contracting the abs.",
-				"caloriesBurnedPerMinute": 4.2,
-				"targets": ["Abs"]
-			},
-			{
-				"exerciseName": "Russian Twists",
-				"description": "Russian twists are rotational exercises that primarily target the oblique muscles. It involves sitting on the floor, leaning back slightly, and twisting the torso from side to side while holding a weight or touching the floor with the hands.",
-				"caloriesBurnedPerMinute": 4.5,
-				"targets": ["Obliques"]
-			},
-			{
-				"exerciseName": "Leg Raises",
-				"description": "Leg raises are isolation exercises that primarily target the lower abdominal muscles. It involves lying on the back, keeping the legs straight, and lifting them towards the ceiling while keeping the lower back pressed into the floor.",
-				"caloriesBurnedPerMinute": 4.1,
-				"targets": ["Lower Abs"]
-			},
-			{
-				"exerciseName": "Bicycle Crunches",
-				"description": "Bicycle crunches are rotational exercises that primarily target the abdominal muscles, including the rectus abdominis and obliques. It involves lying on the back, bringing the opposite elbow towards the opposite knee in a cycling motion, while extending the other leg.",
-				"caloriesBurnedPerMinute": 5.0,
-				"targets": ["Abs", "Obliques"]
-			},
-			{
-				"exerciseName": "Mountain Climbers",
-				"description": "Mountain climbers are dynamic exercises that primarily target the core muscles, including the abs and hip flexors. It involves assuming a push-up position and alternating bringing the knees towards the chest in a running motion.",
-				"caloriesBurnedPerMinute": 6.1,
-				"targets": ["Abs", "Hip Flexors"]
-			},
-			{
-				"exerciseName": "Hanging Knee Raises",
-				"description": "Hanging knee raises are isolation exercises that primarily target the lower abdominal muscles. It involves hanging from a pull-up bar and lifting the knees towards the chest by contracting the abs.",
-				"caloriesBurnedPerMinute": 5.6,
-				"targets": ["Lower Abs"]
-			},
-			{
-				"exerciseName": "Ab Rollouts",
-				"description": "Ab rollouts are dynamic exercises that primarily target the core muscles, including the abs and lower back. It involves kneeling on the floor and rolling the body forward by extending the arms until the body is stretched out, then rolling back to the starting position.",
-				"caloriesBurnedPerMinute": 5.3,
-				"targets": ["Abs", "Lower Back"]
-			}
-		]
-	},
-	{
-		"groupName": "Cardio",
-		"exercises": [
-			{
-				"exerciseName": "Running",
-				"description": "Running is a high-impact aerobic exercise that primarily targets the cardiovascular system. It involves moving rapidly by alternating the feet in a coordinated motion while maintaining a constant pace.",
-				"caloriesBurnedPerMinute": 9.8,
-				"targets": ["Cardiovascular System"]
-			},
-			{
-				"exerciseName": "Cycling",
-				"description": "Cycling is a low-impact aerobic exercise that primarily targets the cardiovascular system. It involves pedaling a stationary bike or riding a bicycle, promoting endurance and cardiovascular fitness.",
-				"caloriesBurnedPerMinute": 7.9,
-				"targets": ["Cardiovascular System"]
-			},
-			{
-				"exerciseName": "Jumping Rope",
-				"description": "Jumping rope is a high-impact aerobic exercise that primarily targets the cardiovascular system. It involves jumping over a rope that is swung beneath the feet, promoting coordination, agility, and cardiovascular endurance.",
-				"caloriesBurnedPerMinute": 11.8,
-				"targets": ["Cardiovascular System"]
-			},
-			{
-				"exerciseName": "Rowing",
-				"description": "Rowing is a low-impact aerobic exercise that primarily targets the cardiovascular system and engages multiple muscle groups. It involves using a rowing machine or rowing in a boat, simulating the motion of rowing.",
-				"caloriesBurnedPerMinute": 7.2,
-				"targets": ["Cardiovascular System", "Upper Body", "Lower Body"]
-			},
-			{
-				"exerciseName": "Elliptical Training",
-				"description": "Elliptical training is a low-impact aerobic exercise that primarily targets the cardiovascular system. It involves using an elliptical machine, which simulates the motion of walking, running, or stair climbing while reducing joint impact.",
-				"caloriesBurnedPerMinute": 8.6,
-				"targets": ["Cardiovascular System"]
-			},
-			{
-				"exerciseName": "Stair Climbing",
-				"description": "Stair climbing is a high-impact aerobic exercise that primarily targets the cardiovascular system and engages the lower body muscles. It involves climbing up and down stairs or using a stair climber machine.",
-				"caloriesBurnedPerMinute": 9.1,
-				"targets": ["Cardiovascular System", "Lower Body"]
-			},
-			{
-				"exerciseName": "Swimming",
-				"description": "Swimming is a low-impact aerobic exercise that primarily targets the cardiovascular system and engages the entire body. It involves swimming strokes in a pool or other water bodies, promoting endurance and overall fitness.",
-				"caloriesBurnedPerMinute": 10.2,
-				"targets": ["Cardiovascular System", "Full Body"]
-			},
-			{
-				"exerciseName": "HIIT Workouts",
-				"description": "HIIT (High-Intensity Interval Training) workouts are a form of cardiovascular exercise that alternates between intense bursts of activity and short recovery periods. It can include various exercises such as sprints, burpees, jumping jacks, and more.",
-				"caloriesBurnedPerMinute": 9.5,
-				"targets": ["Cardiovascular System"]
-			}
-		]
-	},
-	{
-		"groupName": "Full Body",
-		"exercises": [
-			{
-				"exerciseName": "Burpees",
-				"description": "Burpees are compound exercises that engage multiple muscle groups and elevate the heart rate. It involves starting in a standing position, dropping down to a push-up position, performing a push-up, and then jumping back up to the starting position.",
-				"caloriesBurnedPerMinute": 10.4,
-				"targets": ["Full Body"]
-			},
-			{
-				"exerciseName": "Squats",
-				"description": "Squats are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves bending the knees and lowering the body by pushing the hips back, then standing back up.",
-				"caloriesBurnedPerMinute": 7.8,
-				"targets": ["Quadriceps", "Hamstrings", "Glutes"]
-			},
-			{
-				"exerciseName": "Push-ups",
-				"description": "Push-ups are compound exercises that primarily target the chest, shoulders, and triceps. It involves starting in a plank position, lowering the body by bending the elbows, and then pushing back up.",
-				"caloriesBurnedPerMinute": 6.7,
-				"targets": ["Chest", "Shoulders", "Triceps"]
-			},
-			{
-				"exerciseName": "Deadlifts",
-				"description": "Deadlifts are compound exercises that target multiple muscles, including the legs, back, and glutes. It involves lifting a barbell or weighted object from the ground to a standing position while maintaining proper form.",
-				"caloriesBurnedPerMinute": 9.8,
-				"targets": ["Quadriceps", "Hamstrings", "Glutes", "Back"]
-			},
-			{
-				"exerciseName": "Lunges",
-				"description": "Lunges are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves stepping forward with one leg, lowering the body by bending the front and back knees, and then pushing back up.",
-				"caloriesBurnedPerMinute": 6.9,
-				"targets": ["Quadriceps", "Hamstrings", "Glutes"]
-			},
-			{
-				"exerciseName": "Mountain Climbers",
-				"description": "Mountain climbers are dynamic exercises that primarily target the core muscles, including the abs and hip flexors. It involves assuming a push-up position and alternating bringing the knees towards the chest in a running motion.",
-				"caloriesBurnedPerMinute": 6.1,
-				"targets": ["Abs", "Hip Flexors"]
-			},
-			{
-				"exerciseName": "Clean and Jerk",
-				"description": "Clean and jerk is a compound exercise that involves lifting a barbell from the floor to the shoulders and then overhead in a controlled motion. It targets multiple muscle groups, including the legs, back, shoulders, and arms.",
-				"caloriesBurnedPerMinute": 8.9,
-				"targets": [
-					"Quadriceps",
-					"Hamstrings",
-					"Glutes",
-					"Back",
-					"Shoulders",
-					"Arms"
-				]
-			},
-			{
-				"exerciseName": "Bent Over Rows",
-				"description": "Bent over rows are compound exercises that primarily target the back muscles, including the lats, rhomboids, and traps. It involves bending forward at the hips with a slight knee bend and pulling a barbell or dumbbells towards the chest.",
-				"caloriesBurnedPerMinute": 5.7,
-				"targets": ["Back"]
-			}
-		]
-	}
+    {
+        "groupName": "Chest",
+        "exercises": [
+            {
+                "exerciseName": "Bench Press",
+                "description": "The bench press is a compound exercise that primarily targets the pectoralis major muscles. It involves lying on a bench and pressing a weighted barbell away from the chest.",
+                "caloriesBurnedPerMinute": 8.3,
+                "targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
+            },
+            {
+                "exerciseName": "Push-ups",
+                "description": "Push-ups are a bodyweight exercise that targets the chest muscles. It involves maintaining a plank position and pushing the body up and down by extending and flexing the arms.",
+                "caloriesBurnedPerMinute": 7.5,
+                "targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
+            },
+            {
+                "exerciseName": "Dumbbell Flyes",
+                "description": "Dumbbell flyes are isolation exercises that primarily target the pectoralis major muscles. It involves lying on a bench and horizontally extending the arms while holding dumbbells.",
+                "caloriesBurnedPerMinute": 5.8,
+                "targets": ["Pectoralis major", "Anterior deltoids"]
+            },
+            {
+                "exerciseName": "Chest Press Machine",
+                "description": "The chest press machine is a resistance exercise that targets the chest muscles. It involves pushing a weighted platform away from the chest using a machine.",
+                "caloriesBurnedPerMinute": 6.2,
+                "targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
+            },
+            {
+                "exerciseName": "Incline Bench Press",
+                "description": "The incline bench press is a variation of the bench press that primarily targets the upper portion of the pectoralis major muscles. It involves lying on an inclined bench and pressing a weighted barbell away from the chest.",
+                "caloriesBurnedPerMinute": 8.1,
+                "targets": [
+                    "Upper pectoralis major",
+                    "Triceps",
+                    "Anterior deltoids"
+                ]
+            },
+            {
+                "exerciseName": "Cable Crossovers",
+                "description": "Cable crossovers are isolation exercises that primarily target the pectoralis major muscles. It involves standing in the middle of cable machines and crossing the arms in front of the body.",
+                "caloriesBurnedPerMinute": 6.5,
+                "targets": ["Pectoralis major", "Anterior deltoids"]
+            },
+            {
+                "exerciseName": "Dips",
+                "description": "Dips are a bodyweight exercise that targets the chest, triceps, and shoulders. It involves gripping parallel bars and lowering the body by bending the arms, then pushing back up.",
+                "caloriesBurnedPerMinute": 8.2,
+                "targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
+            },
+            {
+                "exerciseName": "Pec Deck Machine",
+                "description": "The pec deck machine is a resistance exercise that primarily targets the chest muscles. It involves sitting in a machine and pushing padded levers together in front of the chest.",
+                "caloriesBurnedPerMinute": 5.6,
+                "targets": ["Pectoralis major", "Anterior deltoids"]
+            },
+            {
+                "exerciseName": "Incline Dumbbell Press",
+                "description": "Incline dumbbell press is an exercise that primarily targets the upper portion of the pectoralis major muscles. It involves lying on an inclined bench and pressing dumbbells away from the chest.",
+                "caloriesBurnedPerMinute": 6.9,
+                "targets": ["Upper pectoralis major", "Anterior deltoids"]
+            },
+            {
+                "exerciseName": "Decline Bench Press",
+                "description": "Decline bench press is a variation of the bench press that primarily targets the lower portion of the pectoralis major muscles. It involves lying on a declined bench and pressing a weighted barbell away from the chest.",
+                "caloriesBurnedPerMinute": 7.8,
+                "targets": [
+                    "Lower pectoralis major",
+                    "Triceps",
+                    "Anterior deltoids"
+                ]
+            },
+            {
+                "exerciseName": "Chest Squeeze Press",
+                "description": "Chest squeeze press is an exercise that primarily targets the inner portion of the pectoralis major muscles. It involves holding a medicine ball or weight plate between the palms and pressing it together in front of the chest.",
+                "caloriesBurnedPerMinute": 6.3,
+                "targets": [
+                    "Inner pectoralis major",
+                    "Triceps",
+                    "Anterior deltoids"
+                ]
+            },
+            {
+                "exerciseName": "Cable Chest Press",
+                "description": "Cable chest press is a resistance exercise that targets the chest muscles. It involves standing in front of cable machines and pressing the handles forward.",
+                "caloriesBurnedPerMinute": 6.4,
+                "targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
+            },
+            {
+                "exerciseName": "Medicine Ball Push-ups",
+                "description": "Medicine ball push-ups are a variation of push-ups that adds instability and engages more muscle groups. It involves placing hands on medicine balls and performing push-ups.",
+                "caloriesBurnedPerMinute": 8.0,
+                "targets": [
+                    "Pectoralis major",
+                    "Triceps",
+                    "Anterior deltoids",
+                    "Core muscles"
+                ]
+            },
+            {
+                "exerciseName": "Chest Dip Machine",
+                "description": "The chest dip machine is a resistance exercise that primarily targets the chest muscles. It involves using a machine with parallel bars and pushing the handles down and up.",
+                "caloriesBurnedPerMinute": 7.1,
+                "targets": ["Pectoralis major", "Triceps", "Anterior deltoids"]
+            },
+            {
+                "exerciseName": "Decline Dumbbell Flyes",
+                "description": "Decline dumbbell flyes are isolation exercises that primarily target the lower portion of the pectoralis major muscles. It involves lying on a declined bench and horizontally extending the arms while holding dumbbells.",
+                "caloriesBurnedPerMinute": 5.9,
+                "targets": ["Lower pectoralis major", "Anterior deltoids"]
+            }
+        ]
+    },
+    {
+        "groupName": "Back",
+        "exercises": [
+            {
+                "exerciseName": "Deadlifts",
+                "description": "Deadlifts are compound exercises that target multiple muscles, including the back muscles. It involves lifting a barbell or weighted object from the ground to a standing position while maintaining proper form.",
+                "caloriesBurnedPerMinute": 9.8,
+                "targets": [
+                    "Erector spinae",
+                    "Trapezius",
+                    "Rhomboids",
+                    "Latissimus dorsi",
+                    "Hamstrings",
+                    "Glutes"
+                ]
+            },
+            {
+                "exerciseName": "Pull-ups",
+                "description": "Pull-ups are bodyweight exercises that primarily target the back muscles. It involves hanging from a bar and pulling the body up until the chin reaches or clears the bar.",
+                "caloriesBurnedPerMinute": 8.8,
+                "targets": [
+                    "Latissimus dorsi",
+                    "Trapezius",
+                    "Rhomboids",
+                    "Biceps"
+                ]
+            },
+            {
+                "exerciseName": "Bent Over Rows",
+                "description": "Bent over rows are compound exercises that primarily target the back muscles. It involves bending over at the waist, holding a barbell or dumbbells, and pulling the weight up towards the lower chest.",
+                "caloriesBurnedPerMinute": 6.7,
+                "targets": [
+                    "Latissimus dorsi",
+                    "Rhomboids",
+                    "Trapezius",
+                    "Erector spinae",
+                    "Biceps"
+                ]
+            },
+            {
+                "exerciseName": "Lat Pulldowns",
+                "description": "Lat pulldowns are isolation exercises that primarily target the latissimus dorsi muscles. It involves sitting at a cable machine, gripping a bar or handles, and pulling it down towards the upper chest.",
+                "caloriesBurnedPerMinute": 6.1,
+                "targets": [
+                    "Latissimus dorsi",
+                    "Rhomboids",
+                    "Trapezius",
+                    "Biceps"
+                ]
+            },
+            {
+                "exerciseName": "T-Bar Rows",
+                "description": "T-bar rows are compound exercises that primarily target the back muscles. It involves leaning over a T-bar machine or fixed barbell, gripping the handles, and rowing the weight towards the abdomen.",
+                "caloriesBurnedPerMinute": 7.2,
+                "targets": [
+                    "Latissimus dorsi",
+                    "Rhomboids",
+                    "Trapezius",
+                    "Biceps"
+                ]
+            },
+            {
+                "exerciseName": "Seated Cable Rows",
+                "description": "Seated cable rows are isolation exercises that primarily target the back muscles. It involves sitting on a cable machine, gripping the handles, and pulling them towards the abdomen while keeping the back straight.",
+                "caloriesBurnedPerMinute": 6.3,
+                "targets": [
+                    "Latissimus dorsi",
+                    "Rhomboids",
+                    "Trapezius",
+                    "Biceps"
+                ]
+            },
+            {
+                "exerciseName": "Good Mornings",
+                "description": "Good mornings are compound exercises that primarily target the lower back muscles. It involves standing with a barbell across the back of the shoulders and bending forward at the waist while keeping the back straight.",
+                "caloriesBurnedPerMinute": 5.5,
+                "targets": ["Erector spinae", "Hamstrings", "Glutes"]
+            },
+            {
+                "exerciseName": "Hyperextensions",
+                "description": "Hyperextensions, also known as back extensions, are isolation exercises that primarily target the lower back muscles. It involves lying face down on a hyperextension bench and raising the upper body until it's in line with the legs.",
+                "caloriesBurnedPerMinute": 5.7,
+                "targets": ["Erector spinae", "Glutes", "Hamstrings"]
+            },
+            {
+                "exerciseName": "Single Arm Dumbbell Rows",
+                "description": "Single arm dumbbell rows are isolation exercises that primarily target the back muscles. It involves bending over with one hand and knee on a bench, and rowing a dumbbell towards the abdomen with the free hand.",
+                "caloriesBurnedPerMinute": 5.9,
+                "targets": [
+                    "Latissimus dorsi",
+                    "Rhomboids",
+                    "Trapezius",
+                    "Biceps"
+                ]
+            },
+            {
+                "exerciseName": "Chin-up Machine",
+                "description": "The chin-up machine is a variation of the pull-up exercise using an assisted machine. It primarily targets the back muscles and allows for adjustable assistance to make the exercise easier.",
+                "caloriesBurnedPerMinute": 7.5,
+                "targets": [
+                    "Latissimus dorsi",
+                    "Trapezius",
+                    "Rhomboids",
+                    "Biceps"
+                ]
+            },
+            {
+                "exerciseName": "Wide Grip Seated Cable Rows",
+                "description": "Wide grip seated cable rows are isolation exercises that primarily target the back muscles. It involves sitting on a cable machine, gripping the handles with a wide grip, and pulling them towards the abdomen.",
+                "caloriesBurnedPerMinute": 6.6,
+                "targets": [
+                    "Latissimus dorsi",
+                    "Rhomboids",
+                    "Trapezius",
+                    "Biceps"
+                ]
+            },
+            {
+                "exerciseName": "Inverted Rows",
+                "description": "Inverted rows, also known as body rows, are bodyweight exercises that primarily target the back muscles. It involves setting up a bar at waist height, lying underneath it, and pulling the chest towards the bar.",
+                "caloriesBurnedPerMinute": 6.8,
+                "targets": [
+                    "Latissimus dorsi",
+                    "Rhomboids",
+                    "Trapezius",
+                    "Biceps"
+                ]
+            },
+            {
+                "exerciseName": "Renegade Rows",
+                "description": "Renegade rows are compound exercises that primarily target the back muscles and also engage the core. It involves assuming a push-up position while holding dumbbells and alternating rowing one arm at a time.",
+                "caloriesBurnedPerMinute": 7.4,
+                "targets": [
+                    "Latissimus dorsi",
+                    "Rhomboids",
+                    "Trapezius",
+                    "Biceps",
+                    "Core muscles"
+                ]
+            },
+            {
+                "exerciseName": "Pullover Machine",
+                "description": "The pullover machine is a resistance exercise that primarily targets the back muscles. It involves sitting in a machine, gripping a bar or handles, and pulling it overhead and behind the head.",
+                "caloriesBurnedPerMinute": 5.4,
+                "targets": ["Latissimus dorsi", "Trapezius", "Rhomboids"]
+            },
+            {
+                "exerciseName": "Back Extension Machine",
+                "description": "The back extension machine is a resistance exercise that primarily targets the lower back muscles. It involves lying face down on a machine, securing the feet, and extending the back against resistance.",
+                "caloriesBurnedPerMinute": 5.6,
+                "targets": ["Erector spinae", "Glutes", "Hamstrings"]
+            }
+        ]
+    },
+    {
+        "groupName": "Shoulders",
+        "exercises": [
+            {
+                "exerciseName": "Military Press",
+                "description": "Military press, also known as overhead press, is a compound exercise that primarily targets the shoulder muscles. It involves standing or sitting and pressing a barbell or dumbbells overhead.",
+                "caloriesBurnedPerMinute": 7.1,
+                "targets": ["Deltoids", "Triceps"]
+            },
+            {
+                "exerciseName": "Dumbbell Shoulder Press",
+                "description": "Dumbbell shoulder press is a compound exercise that primarily targets the shoulder muscles. It involves sitting or standing and pressing dumbbells overhead while keeping the palms facing forward.",
+                "caloriesBurnedPerMinute": 6.4,
+                "targets": ["Deltoids", "Triceps"]
+            },
+            {
+                "exerciseName": "Arnold Press",
+                "description": "Arnold press is a variation of the shoulder press that targets the shoulder muscles. It involves sitting or standing and rotating the palms from a neutral grip to a supinated grip while pressing the dumbbells overhead.",
+                "caloriesBurnedPerMinute": 6.7,
+                "targets": ["Deltoids", "Triceps"]
+            },
+            {
+                "exerciseName": "Lateral Raises",
+                "description": "Lateral raises are isolation exercises that primarily target the side (lateral) head of the shoulder muscles. It involves standing or sitting and lifting dumbbells or other weights out to the sides until the arms are parallel to the ground.",
+                "caloriesBurnedPerMinute": 4.5,
+                "targets": ["Deltoids"]
+            },
+            {
+                "exerciseName": "Front Raises",
+                "description": "Front raises are isolation exercises that primarily target the front (anterior) head of the shoulder muscles. It involves standing or sitting and lifting dumbbells or other weights in front of the body until the arms are parallel to the ground.",
+                "caloriesBurnedPerMinute": 4.3,
+                "targets": ["Deltoids"]
+            },
+            {
+                "exerciseName": "Upright Rows",
+                "description": "Upright rows are compound exercises that primarily target the shoulder muscles. It involves holding a barbell or dumbbells in front of the thighs and lifting them straight up towards the chin while keeping the elbows higher than the forearms.",
+                "caloriesBurnedPerMinute": 5.6,
+                "targets": ["Deltoids", "Trapezius"]
+            },
+            {
+                "exerciseName": "Shoulder Shrugs",
+                "description": "Shoulder shrugs are isolation exercises that primarily target the trapezius muscles. It involves standing or sitting and lifting the shoulders up towards the ears, then lowering them back down.",
+                "caloriesBurnedPerMinute": 4.0,
+                "targets": ["Trapezius"]
+            },
+            {
+                "exerciseName": "Face Pulls",
+                "description": "Face pulls are isolation exercises that primarily target the rear (posterior) head of the shoulder muscles. It involves attaching a rope or handle to a cable machine at face height, pulling the rope towards the face, and squeezing the shoulder blades together.",
+                "caloriesBurnedPerMinute": 5.3,
+                "targets": ["Deltoids", "Rear deltoids", "Trapezius"]
+            },
+            {
+                "exerciseName": "Seated Dumbbell Press",
+                "description": "Seated dumbbell press is a compound exercise that primarily targets the shoulder muscles. It involves sitting on a bench and pressing dumbbells overhead while keeping the palms facing forward.",
+                "caloriesBurnedPerMinute": 5.8,
+                "targets": ["Deltoids", "Triceps"]
+            },
+            {
+                "exerciseName": "Barbell Push Press",
+                "description": "Barbell push press is a compound exercise that primarily targets the shoulder muscles. It involves standing and using leg drive to assist in pressing a barbell overhead.",
+                "caloriesBurnedPerMinute": 6.9,
+                "targets": ["Deltoids", "Triceps", "Legs"]
+            },
+            {
+                "exerciseName": "Reverse Flyes",
+                "description": "Reverse flyes are isolation exercises that primarily target the rear (posterior) head of the shoulder muscles. It involves bending over at the waist, holding dumbbells or other weights, and lifting the arms out to the sides while keeping them parallel to the ground.",
+                "caloriesBurnedPerMinute": 4.7,
+                "targets": ["Deltoids", "Rear deltoids"]
+            },
+            {
+                "exerciseName": "Lateral Dumbbell Raises",
+                "description": "Lateral dumbbell raises are isolation exercises that primarily target the side (lateral) head of the shoulder muscles. It involves standing or sitting and lifting dumbbells out to the sides until the arms are parallel to the ground.",
+                "caloriesBurnedPerMinute": 4.4,
+                "targets": ["Deltoids"]
+            },
+            {
+                "exerciseName": "Smith Machine Shoulder Press",
+                "description": "Smith machine shoulder press is a compound exercise that primarily targets the shoulder muscles. It involves sitting or standing and pressing a barbell attached to a guided track system (Smith machine) overhead.",
+                "caloriesBurnedPerMinute": 6.2,
+                "targets": ["Deltoids", "Triceps"]
+            },
+            {
+                "exerciseName": "Cable Lateral Raises",
+                "description": "Cable lateral raises are isolation exercises that primarily target the side (lateral) head of the shoulder muscles. It involves standing or sitting and lifting cable handles out to the sides until the arms are parallel to the ground.",
+                "caloriesBurnedPerMinute": 5.1,
+                "targets": ["Deltoids"]
+            },
+            {
+                "exerciseName": "Rear Delt Flyes",
+                "description": "Rear delt flyes are isolation exercises that primarily target the rear (posterior) head of the shoulder muscles. It involves bending over at the waist, holding dumbbells or other weights, and lifting the arms out to the sides while keeping the elbows slightly bent.",
+                "caloriesBurnedPerMinute": 4.9,
+                "targets": ["Rear deltoids"]
+            }
+        ]
+    },
+    {
+        "groupName": "Biceps",
+        "exercises": [
+            {
+                "exerciseName": "Barbell Curls",
+                "description": "Barbell curls are isolation exercises that primarily target the biceps muscles. It involves holding a barbell with an underhand grip and curling it up towards the shoulders while keeping the upper arms stationary.",
+                "caloriesBurnedPerMinute": 4.2,
+                "targets": ["Biceps"]
+            },
+            {
+                "exerciseName": "Dumbbell Curls",
+                "description": "Dumbbell curls are isolation exercises that primarily target the biceps muscles. It involves holding dumbbells with an underhand grip and curling them up towards the shoulders while keeping the upper arms stationary.",
+                "caloriesBurnedPerMinute": 4.0,
+                "targets": ["Biceps"]
+            },
+            {
+                "exerciseName": "Hammer Curls",
+                "description": "Hammer curls are isolation exercises that primarily target the biceps muscles and also engage the brachialis. It involves holding dumbbells with a neutral grip and curling them up towards the shoulders while keeping the upper arms stationary.",
+                "caloriesBurnedPerMinute": 3.8,
+                "targets": ["Biceps", "Brachialis"]
+            },
+            {
+                "exerciseName": "Preacher Curls",
+                "description": "Preacher curls are isolation exercises that primarily target the biceps muscles. It involves sitting at a preacher curl bench, resting the upper arms on the pad, and curling a barbell or dumbbells towards the shoulders.",
+                "caloriesBurnedPerMinute": 4.4,
+                "targets": ["Biceps"]
+            },
+            {
+                "exerciseName": "Concentration Curls",
+                "description": "Concentration curls are isolation exercises that primarily target the biceps muscles. It involves sitting on a bench, resting the elbow on the inner thigh, and curling a dumbbell towards the shoulder.",
+                "caloriesBurnedPerMinute": 3.6,
+                "targets": ["Biceps"]
+            },
+            {
+                "exerciseName": "EZ Bar Curls",
+                "description": "EZ bar curls are isolation exercises that primarily target the biceps muscles. It involves holding an EZ bar with an underhand grip and curling it up towards the shoulders while keeping the upper arms stationary.",
+                "caloriesBurnedPerMinute": 4.1,
+                "targets": ["Biceps"]
+            },
+            {
+                "exerciseName": "Chin-ups",
+                "description": "Chin-ups are bodyweight exercises that primarily target the biceps muscles. It involves hanging from a bar with an underhand grip and pulling the body up until the chin clears the bar.",
+                "caloriesBurnedPerMinute": 7.5,
+                "targets": ["Biceps", "Back"]
+            },
+            {
+                "exerciseName": "Cable Curls",
+                "description": "Cable curls are isolation exercises that primarily target the biceps muscles. It involves standing or sitting in front of a cable machine, gripping the handles, and curling them up towards the shoulders.",
+                "caloriesBurnedPerMinute": 4.3,
+                "targets": ["Biceps"]
+            },
+            {
+                "exerciseName": "Zottman Curls",
+                "description": "Zottman curls are compound exercises that primarily target the biceps muscles and also engage the brachialis and brachioradialis. It involves holding dumbbells with a supinated grip during the curling phase and rotating to a pronated grip during the lowering phase.",
+                "caloriesBurnedPerMinute": 4.6,
+                "targets": ["Biceps", "Brachialis", "Brachioradialis"]
+            },
+            {
+                "exerciseName": "Spider Curls",
+                "description": "Spider curls are isolation exercises that primarily target the biceps muscles. It involves lying face down on an incline bench, resting the upper arms on the bench, and curling a barbell or dumbbells towards the shoulders.",
+                "caloriesBurnedPerMinute": 3.9,
+                "targets": ["Biceps"]
+            },
+            {
+                "exerciseName": "Alternating Incline Dumbbell Curls",
+                "description": "Alternating incline dumbbell curls are isolation exercises that primarily target the biceps muscles. It involves sitting on an incline bench, holding dumbbells with an underhand grip, and curling them alternately towards the shoulders.",
+                "caloriesBurnedPerMinute": 4.2,
+                "targets": ["Biceps"]
+            },
+            {
+                "exerciseName": "Hammer Strength Machine Curls",
+                "description": "Hammer Strength machine curls are isolation exercises that primarily target the biceps muscles. It involves using a Hammer Strength machine with handles or grips to curl the weight towards the shoulders.",
+                "caloriesBurnedPerMinute": 4.5,
+                "targets": ["Biceps"]
+            },
+            {
+                "exerciseName": "Barbell Drag Curls",
+                "description": "Barbell drag curls are isolation exercises that primarily target the biceps muscles. It involves holding a barbell with an underhand grip and dragging it up along the front of the body towards the shoulders while keeping the elbows back.",
+                "caloriesBurnedPerMinute": 4.2,
+                "targets": ["Biceps"]
+            },
+            {
+                "exerciseName": "Reverse Grip Barbell Curls",
+                "description": "Reverse grip barbell curls are isolation exercises that primarily target the biceps muscles. It involves holding a barbell with an overhand grip and curling it up towards the shoulders while keeping the upper arms stationary.",
+                "caloriesBurnedPerMinute": 4.0,
+                "targets": ["Biceps"]
+            },
+            {
+                "exerciseName": "Cross Body Hammer Curls",
+                "description": "Cross body hammer curls are isolation exercises that primarily target the biceps muscles. It involves holding dumbbells with a neutral grip and curling them across the body towards the opposite shoulder.",
+                "caloriesBurnedPerMinute": 3.7,
+                "targets": ["Biceps"]
+            }
+        ]
+    },
+    {
+        "groupName": "Triceps",
+        "exercises": [
+            {
+                "exerciseName": "Tricep Dips",
+                "description": "Tricep dips are bodyweight exercises that primarily target the triceps muscles. It involves gripping parallel bars, lowering the body by bending the arms, and then pushing back up.",
+                "caloriesBurnedPerMinute": 6.2,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Close Grip Bench Press",
+                "description": "Close grip bench press is a compound exercise that primarily targets the triceps muscles. It involves lying on a bench and pressing a barbell with a narrow grip away from the chest.",
+                "caloriesBurnedPerMinute": 5.9,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Skull Crushers",
+                "description": "Skull crushers, also known as lying tricep extensions, are isolation exercises that primarily target the triceps muscles. It involves lying on a bench, holding a barbell or dumbbells with an overhand grip, and lowering the weight towards the forehead while keeping the upper arms stationary.",
+                "caloriesBurnedPerMinute": 4.5,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Tricep Pushdowns",
+                "description": "Tricep pushdowns are isolation exercises that primarily target the triceps muscles. It involves standing in front of a cable machine, gripping the bar or handle, and pushing it down until the arms are fully extended.",
+                "caloriesBurnedPerMinute": 4.3,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Overhead Tricep Extension",
+                "description": "Overhead tricep extension is an isolation exercise that primarily targets the triceps muscles. It involves holding a dumbbell or barbell overhead and lowering it behind the head by bending the elbows.",
+                "caloriesBurnedPerMinute": 4.2,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Dumbbell Tricep Kickbacks",
+                "description": "Dumbbell tricep kickbacks are isolation exercises that primarily target the triceps muscles. It involves bending over at the waist, holding dumbbells with an overhand grip, and extending the arms back by straightening the elbows.",
+                "caloriesBurnedPerMinute": 4.1,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Tricep Rope Pushdowns",
+                "description": "Tricep rope pushdowns are isolation exercises that primarily target the triceps muscles. It involves standing in front of a cable machine, gripping the rope handles, and pushing them down until the arms are fully extended.",
+                "caloriesBurnedPerMinute": 4.0,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Diamond Push-ups",
+                "description": "Diamond push-ups are bodyweight exercises that primarily target the triceps muscles. It involves assuming a push-up position with the hands close together, forming a diamond shape, and pushing the body up and down by extending and flexing the arms.",
+                "caloriesBurnedPerMinute": 6.0,
+                "targets": ["Triceps", "Chest"]
+            },
+            {
+                "exerciseName": "Dumbbell Tricep Extensions",
+                "description": "Dumbbell tricep extensions are isolation exercises that primarily target the triceps muscles. It involves holding dumbbells overhead with an overhand grip and lowering them behind the head by bending the elbows.",
+                "caloriesBurnedPerMinute": 4.4,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Lying Tricep Extensions",
+                "description": "Lying tricep extensions, also known as skull crushers, are isolation exercises that primarily target the triceps muscles. It involves lying on a bench, holding a barbell or dumbbells with an overhand grip, and lowering the weight towards the forehead while keeping the upper arms stationary.",
+                "caloriesBurnedPerMinute": 4.5,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Seated Tricep Press",
+                "description": "Seated tricep press is an isolation exercise that primarily targets the triceps muscles. It involves sitting on a bench, holding dumbbells or a barbell with an overhand grip, and pressing the weight overhead by extending the elbows.",
+                "caloriesBurnedPerMinute": 4.3,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "EZ Bar Skull Crushers",
+                "description": "EZ bar skull crushers are isolation exercises that primarily target the triceps muscles. It involves lying on a bench, holding an EZ bar with an overhand grip, and lowering the weight towards the forehead while keeping the upper arms stationary.",
+                "caloriesBurnedPerMinute": 4.5,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Cable Overhead Tricep Extensions",
+                "description": "Cable overhead tricep extensions are isolation exercises that primarily target the triceps muscles. It involves standing facing away from a cable machine, holding the cable attachment with both hands, and extending the arms overhead by straightening the elbows.",
+                "caloriesBurnedPerMinute": 4.1,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Tricep Bench Dips",
+                "description": "Tricep bench dips are bodyweight exercises that primarily target the triceps muscles. It involves sitting on the edge of a bench, gripping the edge with the hands, and lowering the body down and up by bending and extending the arms.",
+                "caloriesBurnedPerMinute": 6.1,
+                "targets": ["Triceps"]
+            },
+            {
+                "exerciseName": "Single Arm Cable Pushdowns",
+                "description": "Single arm cable pushdowns are isolation exercises that primarily target the triceps muscles. It involves standing in front of a cable machine, gripping the handle with one hand, and pushing it down until the arm is fully extended.",
+                "caloriesBurnedPerMinute": 3.9,
+                "targets": ["Triceps"]
+            }
+        ]
+    },
+    {
+        "groupName": "Legs",
+        "exercises": [
+            {
+                "exerciseName": "Squats",
+                "description": "Squats are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves standing with a barbell across the upper back, lowering the body by bending the knees, and then pushing back up.",
+                "caloriesBurnedPerMinute": 8.0,
+                "targets": ["Quadriceps", "Hamstrings", "Glutes"]
+            },
+            {
+                "exerciseName": "Deadlifts",
+                "description": "Deadlifts are compound exercises that target multiple muscles, including the legs, back, and glutes. It involves lifting a barbell or weighted object from the ground to a standing position while maintaining proper form.",
+                "caloriesBurnedPerMinute": 9.8,
+                "targets": ["Quadriceps", "Hamstrings", "Glutes", "Back"]
+            },
+            {
+                "exerciseName": "Leg Press",
+                "description": "Leg press is a machine exercise that primarily targets the leg muscles, including the quadriceps, hamstrings, and glutes. It involves sitting on a sled and pushing the weight away by extending the legs.",
+                "caloriesBurnedPerMinute": 6.5,
+                "targets": ["Quadriceps", "Hamstrings", "Glutes"]
+            },
+            {
+                "exerciseName": "Lunges",
+                "description": "Lunges are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves stepping forward with one leg, lowering the body by bending the front and back knees, and then pushing back up.",
+                "caloriesBurnedPerMinute": 6.9,
+                "targets": ["Quadriceps", "Hamstrings", "Glutes"]
+            },
+            {
+                "exerciseName": "Leg Extensions",
+                "description": "Leg extensions are isolation exercises that primarily target the quadriceps muscles. It involves sitting on a machine, lifting the weight by extending the legs, and then lowering it back down.",
+                "caloriesBurnedPerMinute": 4.2,
+                "targets": ["Quadriceps"]
+            },
+            {
+                "exerciseName": "Leg Curls",
+                "description": "Leg curls are isolation exercises that primarily target the hamstring muscles. It involves lying face down on a machine, bending the legs by curling the weight towards the buttocks, and then lowering it back down.",
+                "caloriesBurnedPerMinute": 4.5,
+                "targets": ["Hamstrings"]
+            },
+            {
+                "exerciseName": "Calf Raises",
+                "description": "Calf raises are isolation exercises that primarily target the calf muscles. It involves standing on the balls of the feet, lifting the heels as high as possible, and then lowering them back down.",
+                "caloriesBurnedPerMinute": 4.0,
+                "targets": ["Calves"]
+            },
+            {
+                "exerciseName": "Glute Bridges",
+                "description": "Glute bridges are compound exercises that primarily target the glute muscles. It involves lying on the back, bending the knees, and lifting the hips off the ground by squeezing the glutes.",
+                "caloriesBurnedPerMinute": 4.3,
+                "targets": ["Glutes"]
+            },
+            {
+                "exerciseName": "Romanian Deadlifts",
+                "description": "Romanian deadlifts are compound exercises that primarily target the hamstring muscles and also engage the glutes and lower back. It involves holding a barbell with an overhand grip, bending forward at the hips, and lowering the weight while keeping the back straight.",
+                "caloriesBurnedPerMinute": 6.3,
+                "targets": ["Hamstrings", "Glutes", "Lower Back"]
+            },
+            {
+                "exerciseName": "Hack Squats",
+                "description": "Hack squats are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves standing on a platform with a barbell behind the legs, lowering the body by bending the knees, and then pushing back up.",
+                "caloriesBurnedPerMinute": 6.8,
+                "targets": ["Quadriceps", "Hamstrings", "Glutes"]
+            },
+            {
+                "exerciseName": "Bulgarian Split Squats",
+                "description": "Bulgarian split squats are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves standing in a split stance with one foot elevated behind, lowering the body by bending the front knee, and then pushing back up.",
+                "caloriesBurnedPerMinute": 7.1,
+                "targets": ["Quadriceps", "Hamstrings", "Glutes"]
+            },
+            {
+                "exerciseName": "Step-ups",
+                "description": "Step-ups are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves stepping onto a platform with one leg, pushing through the heel to lift the body up, and then stepping back down.",
+                "caloriesBurnedPerMinute": 7.3,
+                "targets": ["Quadriceps", "Hamstrings", "Glutes"]
+            },
+            {
+                "exerciseName": "Seated Calf Raises",
+                "description": "Seated calf raises are isolation exercises that primarily target the calf muscles. It involves sitting on a machine, placing the balls of the feet on a platform, and lifting the weight by raising the heels.",
+                "caloriesBurnedPerMinute": 3.9,
+                "targets": ["Calves"]
+            },
+            {
+                "exerciseName": "Sumo Squats",
+                "description": "Sumo squats are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves standing with a wide stance, toes pointed out, and lowering the body by bending the knees in a squatting motion.",
+                "caloriesBurnedPerMinute": 7.0,
+                "targets": ["Quadriceps", "Hamstrings", "Glutes"]
+            },
+            {
+                "exerciseName": "Leg Press Calf Raises",
+                "description": "Leg press calf raises are isolation exercises that primarily target the calf muscles. It involves sitting on a leg press machine, placing the balls of the feet on a platform, and lifting the weight by raising the heels.",
+                "caloriesBurnedPerMinute": 4.1,
+                "targets": ["Calves"]
+            }
+        ]
+    },
+    {
+        "groupName": "Abs",
+        "exercises": [
+            {
+                "exerciseName": "Plank",
+                "description": "Plank is an isometric exercise that primarily targets the core muscles, including the abs and lower back. It involves maintaining a position similar to a push-up, with the body straight and supported by the forearms and toes.",
+                "caloriesBurnedPerMinute": 3.8,
+                "targets": ["Abs", "Lower Back"]
+            },
+            {
+                "exerciseName": "Crunches",
+                "description": "Crunches are isolation exercises that primarily target the abdominal muscles. It involves lying on the back, bending the knees, and lifting the upper body towards the knees by contracting the abs.",
+                "caloriesBurnedPerMinute": 4.2,
+                "targets": ["Abs"]
+            },
+            {
+                "exerciseName": "Russian Twists",
+                "description": "Russian twists are rotational exercises that primarily target the oblique muscles. It involves sitting on the floor, leaning back slightly, and twisting the torso from side to side while holding a weight or touching the floor with the hands.",
+                "caloriesBurnedPerMinute": 4.5,
+                "targets": ["Obliques"]
+            },
+            {
+                "exerciseName": "Leg Raises",
+                "description": "Leg raises are isolation exercises that primarily target the lower abdominal muscles. It involves lying on the back, keeping the legs straight, and lifting them towards the ceiling while keeping the lower back pressed into the floor.",
+                "caloriesBurnedPerMinute": 4.1,
+                "targets": ["Lower Abs"]
+            },
+            {
+                "exerciseName": "Bicycle Crunches",
+                "description": "Bicycle crunches are rotational exercises that primarily target the abdominal muscles, including the rectus abdominis and obliques. It involves lying on the back, bringing the opposite elbow towards the opposite knee in a cycling motion, while extending the other leg.",
+                "caloriesBurnedPerMinute": 5.0,
+                "targets": ["Abs", "Obliques"]
+            },
+            {
+                "exerciseName": "Mountain Climbers",
+                "description": "Mountain climbers are dynamic exercises that primarily target the core muscles, including the abs and hip flexors. It involves assuming a push-up position and alternating bringing the knees towards the chest in a running motion.",
+                "caloriesBurnedPerMinute": 6.1,
+                "targets": ["Abs", "Hip Flexors"]
+            },
+            {
+                "exerciseName": "Hanging Knee Raises",
+                "description": "Hanging knee raises are isolation exercises that primarily target the lower abdominal muscles. It involves hanging from a pull-up bar and lifting the knees towards the chest by contracting the abs.",
+                "caloriesBurnedPerMinute": 5.6,
+                "targets": ["Lower Abs"]
+            },
+            {
+                "exerciseName": "Ab Rollouts",
+                "description": "Ab rollouts are dynamic exercises that primarily target the core muscles, including the abs and lower back. It involves kneeling on the floor and rolling the body forward by extending the arms until the body is stretched out, then rolling back to the starting position.",
+                "caloriesBurnedPerMinute": 5.3,
+                "targets": ["Abs", "Lower Back"]
+            }
+        ]
+    },
+    {
+        "groupName": "Cardio",
+        "exercises": [
+            {
+                "exerciseName": "Running",
+                "description": "Running is a high-impact aerobic exercise that primarily targets the cardiovascular system. It involves moving rapidly by alternating the feet in a coordinated motion while maintaining a constant pace.",
+                "caloriesBurnedPerMinute": 9.8,
+                "targets": ["Cardiovascular System"]
+            },
+            {
+                "exerciseName": "Cycling",
+                "description": "Cycling is a low-impact aerobic exercise that primarily targets the cardiovascular system. It involves pedaling a stationary bike or riding a bicycle, promoting endurance and cardiovascular fitness.",
+                "caloriesBurnedPerMinute": 7.9,
+                "targets": ["Cardiovascular System"]
+            },
+            {
+                "exerciseName": "Jumping Rope",
+                "description": "Jumping rope is a high-impact aerobic exercise that primarily targets the cardiovascular system. It involves jumping over a rope that is swung beneath the feet, promoting coordination, agility, and cardiovascular endurance.",
+                "caloriesBurnedPerMinute": 11.8,
+                "targets": ["Cardiovascular System"]
+            },
+            {
+                "exerciseName": "Rowing",
+                "description": "Rowing is a low-impact aerobic exercise that primarily targets the cardiovascular system and engages multiple muscle groups. It involves using a rowing machine or rowing in a boat, simulating the motion of rowing.",
+                "caloriesBurnedPerMinute": 7.2,
+                "targets": ["Cardiovascular System", "Upper Body", "Lower Body"]
+            },
+            {
+                "exerciseName": "Elliptical Training",
+                "description": "Elliptical training is a low-impact aerobic exercise that primarily targets the cardiovascular system. It involves using an elliptical machine, which simulates the motion of walking, running, or stair climbing while reducing joint impact.",
+                "caloriesBurnedPerMinute": 8.6,
+                "targets": ["Cardiovascular System"]
+            },
+            {
+                "exerciseName": "Stair Climbing",
+                "description": "Stair climbing is a high-impact aerobic exercise that primarily targets the cardiovascular system and engages the lower body muscles. It involves climbing up and down stairs or using a stair climber machine.",
+                "caloriesBurnedPerMinute": 9.1,
+                "targets": ["Cardiovascular System", "Lower Body"]
+            },
+            {
+                "exerciseName": "Swimming",
+                "description": "Swimming is a low-impact aerobic exercise that primarily targets the cardiovascular system and engages the entire body. It involves swimming strokes in a pool or other water bodies, promoting endurance and overall fitness.",
+                "caloriesBurnedPerMinute": 10.2,
+                "targets": ["Cardiovascular System", "Full Body"]
+            },
+            {
+                "exerciseName": "HIIT Workouts",
+                "description": "HIIT (High-Intensity Interval Training) workouts are a form of cardiovascular exercise that alternates between intense bursts of activity and short recovery periods. It can include various exercises such as sprints, burpees, jumping jacks, and more.",
+                "caloriesBurnedPerMinute": 9.5,
+                "targets": ["Cardiovascular System"]
+            }
+        ]
+    },
+    {
+        "groupName": "Full Body",
+        "exercises": [
+            {
+                "exerciseName": "Burpees",
+                "description": "Burpees are compound exercises that engage multiple muscle groups and elevate the heart rate. It involves starting in a standing position, dropping down to a push-up position, performing a push-up, and then jumping back up to the starting position.",
+                "caloriesBurnedPerMinute": 10.4,
+                "targets": ["Full Body"]
+            },
+            {
+                "exerciseName": "Squats",
+                "description": "Squats are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves bending the knees and lowering the body by pushing the hips back, then standing back up.",
+                "caloriesBurnedPerMinute": 7.8,
+                "targets": ["Quadriceps", "Hamstrings", "Glutes"]
+            },
+            {
+                "exerciseName": "Push-ups",
+                "description": "Push-ups are compound exercises that primarily target the chest, shoulders, and triceps. It involves starting in a plank position, lowering the body by bending the elbows, and then pushing back up.",
+                "caloriesBurnedPerMinute": 6.7,
+                "targets": ["Chest", "Shoulders", "Triceps"]
+            },
+            {
+                "exerciseName": "Deadlifts",
+                "description": "Deadlifts are compound exercises that target multiple muscles, including the legs, back, and glutes. It involves lifting a barbell or weighted object from the ground to a standing position while maintaining proper form.",
+                "caloriesBurnedPerMinute": 9.8,
+                "targets": ["Quadriceps", "Hamstrings", "Glutes", "Back"]
+            },
+            {
+                "exerciseName": "Lunges",
+                "description": "Lunges are compound exercises that primarily target the leg muscles, including the quadriceps, hamstrings, and glutes. It involves stepping forward with one leg, lowering the body by bending the front and back knees, and then pushing back up.",
+                "caloriesBurnedPerMinute": 6.9,
+                "targets": ["Quadriceps", "Hamstrings", "Glutes"]
+            },
+            {
+                "exerciseName": "Mountain Climbers",
+                "description": "Mountain climbers are dynamic exercises that primarily target the core muscles, including the abs and hip flexors. It involves assuming a push-up position and alternating bringing the knees towards the chest in a running motion.",
+                "caloriesBurnedPerMinute": 6.1,
+                "targets": ["Abs", "Hip Flexors"]
+            },
+            {
+                "exerciseName": "Clean and Jerk",
+                "description": "Clean and jerk is a compound exercise that involves lifting a barbell from the floor to the shoulders and then overhead in a controlled motion. It targets multiple muscle groups, including the legs, back, shoulders, and arms.",
+                "caloriesBurnedPerMinute": 8.9,
+                "targets": [
+                    "Quadriceps",
+                    "Hamstrings",
+                    "Glutes",
+                    "Back",
+                    "Shoulders",
+                    "Arms"
+                ]
+            },
+            {
+                "exerciseName": "Bent Over Rows",
+                "description": "Bent over rows are compound exercises that primarily target the back muscles, including the lats, rhomboids, and traps. It involves bending forward at the hips with a slight knee bend and pulling a barbell or dumbbells towards the chest.",
+                "caloriesBurnedPerMinute": 5.7,
+                "targets": ["Back"]
+            }
+        ]
+    }
 ]

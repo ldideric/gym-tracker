@@ -1,12 +1,12 @@
 <?php
 
+use App\Http\Controllers\Api\ExerciseController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\ExerciseController;
 
 Route::post('/exercises', [ExerciseController::class, 'index'])
-	->middleware('auth:sanctum');
+    ->middleware('auth:sanctum');
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-	return $request->user();
+    return $request->user();
 });

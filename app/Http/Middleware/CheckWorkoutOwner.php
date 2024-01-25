@@ -4,23 +4,23 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Auth;
+use Symfony\Component\HttpFoundation\Response;
 
 class CheckWorkoutOwner
 {
-	public function handle(Request $request, Closure $next): Response
-	{
-		$workout = $request->route('workout');
+    public function handle(Request $request, Closure $next): Response
+    {
+        $workout = $request->route('workout');
 
-		if (!$workout) {
-			return $next($request);
-		}
+        if (! $workout) {
+            return $next($request);
+        }
 
-		if (Auth::check() && Auth::user()->id === $workout->user_id) {
-			return $next($request);
-		}
+        if (Auth::check() && Auth::user()->id === $workout->user_id) {
+            return $next($request);
+        }
 
-		return abort(403);
-	}
+        abort(403);
+    }
 }

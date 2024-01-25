@@ -8,18 +8,18 @@ use Symfony\Component\HttpFoundation\Response;
 
 class CheckSessionOwner
 {
-	public function handle(Request $request, Closure $next): Response
-	{
-		$session = $request->route('session');
+    public function handle(Request $request, Closure $next): Response
+    {
+        $session = $request->route('session');
 
-		if (!$session) {
-			return $next($request);
-		}
+        if (! $session) {
+            return $next($request);
+        }
 
-		if (auth()->check() && auth()->user()->id === $session->user_id) {
-			return $next($request);
-		}
+        if (auth()->check() && auth()->user()->id === $session->user_id) {
+            return $next($request);
+        }
 
-		return abort(403);
-	}
+        abort(403);
+    }
 }

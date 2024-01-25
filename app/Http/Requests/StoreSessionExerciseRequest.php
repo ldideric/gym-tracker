@@ -2,37 +2,39 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
 use App\Models\ExerciseType;
-use App\Enums\MuscleGroup;
+use Illuminate\Foundation\Http\FormRequest;
 
 class StoreSessionExerciseRequest extends FormRequest
 {
-	public function authorize()
-	{
-		return true;
-	}
+    public function authorize(): bool
+    {
+        return true;
+    }
 
-	public function rules()
-	{
-		$rules = [
-			'workout_id' => ['required', 'exists:workouts,id'],
-			'exercise_type_id' => ['required', 'exists:exercise_types,id'],
-		];
+    public function rules(): array
+    {
+        $rules = [
+            'workout_id' => ['required', 'exists:workouts,id'],
+            'exercise_type_id' => ['required', 'exists:exercise_types,id'],
+        ];
 
-		$exercise = ExerciseType::find($this->exercise_id);
-		if ($exercise->muscle_group->equals(MuscleGroup::CARDIO)) {
-			$rules['sets'] = ['nullable'];
-			$rules['reps'] = ['nullable'];
-			$rules['weights'] = ['nullable'];
-			$rules['duration'] = ['required', 'integer'];
-		} else {
-			$rules['sets'] = ['required', 'integer'];
-			$rules['reps'] = ['required', 'integer'];
-			$rules['weights'] = ['required', 'integer'];
-			$rules['duration'] = ['nullable'];
-		}
+        $exercise = ExerciseType::find($this->exercise_type_id);
 
-		return $rules;
-	}
+        return array_merge($rules, $this->getExerciseRules($exercise));
+    }
+
+    private function getExerciseRules(ExerciseType $exercise): array
+    {
+        $exerciseRules = [];
+        $ruleTypes = ['sets', 'reps', 'weights', 'duration'];
+
+        foreach ($ruleTypes as $ruleType) {
+            $exerciseRules[$ruleType] = $exercise->is_cardio && $ruleType !== 'duration'
+                ? ['nullable']
+                : ['required', 'integer'];
+        }
+
+        return $exerciseRules;
+    }
 }
