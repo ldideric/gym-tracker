@@ -4,13 +4,13 @@ namespace App\Enums;
 
 enum MuscleGroup: string
 {
-    const CHEST = 'Chest';
-    const BACK = 'Back';
-    const SHOULDERS = 'Shoulders';
-    const BICEPS = 'Biceps';
-    const TRICEPS = 'Triceps';
-    const LEGS = 'Legs';
-    const ABS = 'Abs';
-    const CARDIO = 'Cardio';
-    const FULL_BODY = 'Full Body';
+    case CHEST = 'Chest';
+    case BACK = 'Back';
+    case SHOULDERS = 'Shoulders';
+    case BICEPS = 'Biceps';
+    case TRICEPS = 'Triceps';
+    case LEGS = 'Legs';
+    case ABS = 'Abs';
+    case CARDIO = 'Cardio';
+    case FULL_BODY = 'Full Body';
 }

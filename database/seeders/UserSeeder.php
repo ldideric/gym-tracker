@@ -2,11 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-use App\Models\ExerciseType;
-use App\Models\Workout;
-use App\Models\Session;
 use App\Models\Exercise;
+use App\Models\ExerciseType;
+use App\Models\Session;
+use App\Models\User;
+use App\Models\Workout;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
@@ -41,24 +42,25 @@ class UserSeeder extends Seeder
         $this->call(DummyUserSeeder::class);
     }
 
-    static function createSession($exercises, $user, $workoutId = null)
+    static function createSession(Collection $exercises, $user, $workoutId = null): void
     {
         $session = Session::factory()->create([
             'user_id' => $user->id,
             'workout_id' => $workoutId,
         ]);
 
+        /** @var ExerciseType $exercise */
         foreach ($exercises as $exercise) {
             $params = [
                 'exercise_type_id' => $exercise->id,
                 'session_id' => $session->id,
             ];
-            if ($exercise->is_cardio()) {
-                $params['sets'] = null;
-                $params['reps'] = null;
-                $params['weight'] = null;
+            if ($exercise->is_cardio) {
+                $params['sets'] = 0;
+                $params['reps'] = 0;
+                $params['weight'] = 0;
             } else {
-                $params['duration'] = null;
+                $params['duration'] = 0;
             }
             Exercise::factory()->create($params);
         }

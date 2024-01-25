@@ -32,10 +32,6 @@ class Exercise extends Model
         'duration',
     ];
 
-    protected $casts = [
-        'duration' => 'time',
-    ];
-
     public function session(): BelongsTo
     {
         return $this->belongsTo(Session::class);
